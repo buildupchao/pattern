@@ -7,3 +7,5 @@ DoNotLetFinalToVar.java
 Advice 3: 三元操作符的类型务必一致
 PlsUseSameTypeJudge.java
 
+Advice 4: 避免带有变长参数的方法重载
+PlsAvoidOverrideVariableParamMathod.java
