@@ -10,7 +10,7 @@ import java.nio.channels.SocketChannel;
 import java.nio.charset.Charset;
 import java.util.Iterator;
 
-public class NIOServer {
+public class HttpServer {
 
 	public static void main(String[] args) {
 		try {
