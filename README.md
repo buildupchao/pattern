@@ -7,6 +7,6 @@ deep design pattern
 
 ### 看透Spring MVC源代码分析与实践
 
-- chapter 4 [Java中Socket的用法](https://github.com/Zychaowill/pattern/tree/master/src/com/jangz/socket)
-- chapter 5 [自己动手实现HTTP协议]
+- chapter 4 [Java中Socket的用法](https://github.com/Zychaowill/pattern/tree/master/src/com/jangz/deepinspringmvc/socket)
+- chapter 5 [自己动手实现HTTP协议](https://github.com/Zychaowill/pattern/tree/master/src/com/jangz/deepinspringmvc/http)
 - chapter 6 [详解Servlet]
