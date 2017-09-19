@@ -1,4 +1,4 @@
-package com.jangz.socket;
+package com.jangz.deepinspringmvc.socket;
 
 import java.io.BufferedReader;
 import java.io.IOException;
