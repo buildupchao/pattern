@@ -8,7 +8,6 @@ Accept: image/webp,image/apng,image/*,*/*;q=0.8<br/>
 Referer: http://localhost/<br/>
 Accept-Encoding: gzip, deflate, br<br/>
 Accept-Language: zh-CN,zh;q=0.8<br/>
-Cookie: JSESSIONID=DD86E387A2D49E1C55621A47E4793A25; userid=74; curruser="stevej@Sales Director"; LOGSESSIONID=28978261;<br/> loginid="stevej@Sales Director"<br/>
 <br/>
 <br/>
 Method:	GET<br/>
