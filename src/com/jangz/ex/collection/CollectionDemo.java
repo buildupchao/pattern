@@ -21,9 +21,9 @@ public class CollectionDemo {
 		tags.add("Linux");
 		
 		articles.add(new Article("Head First Java", "Jang", tags));
-		articles.add(new Article("Head First Éè¼ÆÄ£Ê½", "Jang", tags));
-		articles.add(new Article("ÄñÊåµÄLinuxË½·¿²Ë", "Jang", tags));
-		articles.add(new Article("JavaÓëÄ£Ê½", "Zychao", tags));
+		articles.add(new Article("Head First è®¾è®¡æ¨¡å¼", "Jang", tags));
+		articles.add(new Article("é¸Ÿå”çš„Linuxç§æˆ¿èœ", "Jang", tags));
+		articles.add(new Article("Javaä¸æ¨¡å¼", "Zychao", tags));
 	}
 	
 	public List<Article> getAllJavaArticle() {

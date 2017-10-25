@@ -26,10 +26,10 @@ public class BiSearchWithForkJoin extends RecursiveAction {
 	@Override
 	protected void compute() {
 		if (problem.size < threshold) {
-			// Ð¡ÓÚ·§Öµ£¬¾ÍÖ±½ÓÓÃÆÕÍ¨µÄ¶þ·Ö²éÕÒ
+			// å°äºŽé˜€å€¼ï¼Œå°±ç›´æŽ¥ç”¨æ™®é€šçš„äºŒåˆ†æŸ¥æ‰¾
 			result = problem.searchSequentially(numberToSearch);
 		} else {
-			// ·Ö½â×ÓÈÎÎñ
+			// åˆ†è§£å­ä»»åŠ¡
 			int midPoint = problem.size / 2;
 			BiSearchWithForkJoin left = new BiSearchWithForkJoin(problem.subProblem(0, midPoint), threshold, numberToSearch);
 			BiSearchWithForkJoin right = new BiSearchWithForkJoin(problem.subProblem(midPoint + 1, problem.size - 1), threshold, numberToSearch);
@@ -38,7 +38,7 @@ public class BiSearchWithForkJoin extends RecursiveAction {
 		}
 	}
 	
-	// ¹¹ÔìÊý¾Ý
+	// æž„é€ æ•°æ®
 	private static final int[] data = new int[10_000_000];
 	static {
 		for (int i = 0; i < 10_000_000; i++) {
@@ -51,7 +51,7 @@ public class BiSearchWithForkJoin extends RecursiveAction {
 		int threshold = 100;
 		int nThreads = 10;
 
-		// ²éÕÒ10_000_000ËùÔÚµÄÏÂ±ê
+		// æŸ¥æ‰¾10_000_000æ‰€åœ¨çš„ä¸‹æ ‡
 		BiSearchWithForkJoin biSearchWithForkJoin = new BiSearchWithForkJoin(problem, threshold, 100_0000);
 		ForkJoinPool forkJoinPool = new ForkJoinPool(nThreads);
 		forkJoinPool.invoke(biSearchWithForkJoin);
