@@ -12,37 +12,37 @@ import java.lang.annotation.Target;
 public @interface FieldMeta {
 	
 	/**
-	 * ÊÇ·ñÎªĞòÁĞºÅ
+	 * æ˜¯å¦ä¸ºåºåˆ—å·
 	 * @return
 	 */
 	boolean id() default false;
 	
 	/**
-	 * ×Ö¶ÎÃû³Æ
+	 * å­—æ®µåç§°
 	 * @return
 	 */
 	String name() default "";
 	
 	/**
-	 * ÊÇ·ñ¿É±à¼­
+	 * æ˜¯å¦å¯ç¼–è¾‘
 	 * @return
 	 */
 	boolean editable() default true;
 	
 	/**
-	 * ÊÇ·ñÔÚÁĞ±íÖĞÏÔÊ¾
+	 * æ˜¯å¦åœ¨åˆ—è¡¨ä¸­æ˜¾ç¤º
 	 * @return
 	 */
 	boolean summary() default true;
 	
 	/**
-	 * ×Ö¶ÎÃèÊö
+	 * å­—æ®µæè¿°
 	 * @return
 	 */
 	String description() default "";
 	
 	/**
-	 * ÅÅĞò×Ö¶Î
+	 * æ’åºå­—æ®µ
 	 * @return
 	 */
 	int order() default 0;

@@ -2,18 +2,18 @@ package com.jangz.syntax.annotation;
 
 public class Anno {
 
-	@FieldMeta(id = true, name = "ĞòÁĞºÅ", order = 1)
+	@FieldMeta(id = true, name = "åºåˆ—å·", order = 1)
 	private int id;
 
-	@FieldMeta(name = "ĞÕÃû", order = 3)
+	@FieldMeta(name = "å§“å", order = 3)
 	private String name;
 
-	@FieldMeta(name = "ÄêÁä", order = 2)
+	@FieldMeta(name = "å¹´é¾„", order = 2)
 	private int age;
 
-	@FieldMeta(description = "ÃèÊö", order = 4)
+	@FieldMeta(description = "æè¿°", order = 4)
 	public String desc() {
-		return "java·´Éä»ñÈ¡annotationµÄ²âÊÔ"; 
+		return "javaåå°„è·å–annotationçš„æµ‹è¯•"; 
 	}
 	
 	public int getId() {
