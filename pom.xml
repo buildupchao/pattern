@@ -4,15 +4,21 @@
 	<groupId>com.jangz</groupId>
 	<artifactId>pattern</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	
+
 	<properties>
 		<cglib.version>2.2.2</cglib.version>
 		<cglib-nodep.version>2.1_3</cglib-nodep.version>
 		<junit.version>4.12</junit.version>
 		<slf4j.version>1.7.12</slf4j.version>
 	</properties>
-	
+
 	<dependencies>
+		<dependency>
+			<groupId>mysql</groupId>
+			<artifactId>mysql-connector-java</artifactId>
+			<version>5.1.39</version>
+		</dependency>
+
 		<dependency>
 			<groupId>cglib</groupId>
 			<artifactId>cglib</artifactId>
@@ -34,7 +40,7 @@
 			<version>${slf4j.version}</version>
 		</dependency>
 	</dependencies>
-	
+
 	<build>
 		<sourceDirectory>src</sourceDirectory>
 		<resources>
