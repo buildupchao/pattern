@@ -1,9 +1,9 @@
-package com.jangz.ex.collection;
+package com.jangz.syntax.samples.collection;
 
 import java.util.ArrayList;
 import java.util.List;
 
-import com.jangz.ex.entity.Article;
+import com.jangz.syntax.samples.entity.Article;
 
 public class CollectionDemo {
 	

@@ -1,4 +1,4 @@
-package com.jangz.algo.multi;
+package com.jangz.algothinking.multi;
 
 import java.io.BufferedReader;
 import java.io.IOException;
