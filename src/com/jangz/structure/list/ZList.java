@@ -9,6 +9,12 @@ import java.util.List;
 import java.util.ListIterator;
 import java.util.RandomAccess;
 
+/**
+ * @see Collection
+ * @see List
+ * @see LinkedList
+ * @see Vector
+ */
 public class ZList<E> extends AbstractList<E> 
 	implements List<E>, RandomAccess, Cloneable, Serializable {
 
