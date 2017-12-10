@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="36c5fafc-d0d9-4e52-8346-20ef094dc853" name="Default" comment="" />
+    <list default="true" id="36c5fafc-d0d9-4e52-8346-20ef094dc853" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+    </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -35,6 +37,8 @@
         <option value="$PROJECT_DIR$/src/com/jangz/algo/multi/Algorithmeric.java" />
         <option value="$PROJECT_DIR$/src/com/jangz/syntax/serialize/SerializeExample.java" />
         <option value="$PROJECT_DIR$/src/com/jangz/syntax/serialize/Person.java" />
+        <option value="$PROJECT_DIR$/src/com/jangz/syntax/stream/UseJavaStream.java" />
+        <option value="$PROJECT_DIR$/src/com/jangz/newfeature/chap1/FilteringApples.java" />
       </list>
     </option>
   </component>
@@ -81,6 +85,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
+      <pane id="PackagesPane" />
       <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
@@ -126,58 +132,8 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="pattern" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="pattern" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="jangz" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="syntax" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="pattern" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="pattern" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="jangz" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="syntax" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="serialize" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
-      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -201,7 +157,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.SerializeExample">
+  <component name="RunManager" selected="Application.FilteringApples">
     <configuration default="false" name="SerializeExample" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
@@ -210,6 +166,26 @@
         </pattern>
       </extension>
       <option name="MAIN_CLASS_NAME" value="com.jangz.syntax.serialize.SerializeExample" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="pattern" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="false" name="FilteringApples" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="com.jangz.newfeature.chap1.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="MAIN_CLASS_NAME" value="com.jangz.newfeature.chap1.FilteringApples" />
       <option name="VM_PARAMETERS" />
       <option name="PROGRAM_PARAMETERS" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
@@ -820,12 +796,14 @@
       <envs />
       <method />
     </configuration>
-    <list size="1">
+    <list size="2">
       <item index="0" class="java.lang.String" itemvalue="Application.SerializeExample" />
+      <item index="1" class="java.lang.String" itemvalue="Application.FilteringApples" />
     </list>
     <recent_temporary>
-      <list size="1">
-        <item index="0" class="java.lang.String" itemvalue="Application.SerializeExample" />
+      <list size="2">
+        <item index="0" class="java.lang.String" itemvalue="Application.FilteringApples" />
+        <item index="1" class="java.lang.String" itemvalue="Application.SerializeExample" />
       </list>
     </recent_temporary>
   </component>
@@ -848,12 +826,13 @@
       <workItem from="1511275222338" duration="270000" />
       <workItem from="1511543542263" duration="31000" />
       <workItem from="1511780992203" duration="28000" />
-      <workItem from="1512391765902" duration="1107000" />
+      <workItem from="1512391765902" duration="2393000" />
+      <workItem from="1512868948110" duration="2462000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="1517000" />
+    <option name="totallyTimeSpent" value="5265000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
@@ -861,19 +840,19 @@
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Nl-Palette" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3293124" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3293124" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3293124" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3293124" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3293124" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Properties" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3293124" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3293124" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2672414" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.27155173" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -920,7 +899,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -929,23 +907,31 @@
         <state relative-caret-position="1176">
           <caret line="56" column="18" lean-forward="false" selection-start-line="56" selection-start-column="18" selection-end-line="56" selection-end-column="18" />
           <folding>
-            <element signature="e#477#478#0" expanded="true" />
-            <element signature="e#504#505#0" expanded="true" />
-            <element signature="e#544#545#0" expanded="true" />
-            <element signature="e#576#577#0" expanded="true" />
-            <element signature="e#607#608#0" expanded="true" />
-            <element signature="e#633#634#0" expanded="true" />
-            <element signature="e#672#673#0" expanded="true" />
-            <element signature="e#702#703#0" expanded="true" />
-            <element signature="e#735#736#0" expanded="true" />
-            <element signature="e#761#762#0" expanded="true" />
-            <element signature="e#802#803#0" expanded="true" />
-            <element signature="e#832#833#0" expanded="true" />
-            <element signature="e#873#874#0" expanded="true" />
-            <element signature="e#903#904#0" expanded="true" />
-            <element signature="e#956#957#0" expanded="true" />
-            <element signature="e#996#997#0" expanded="true" />
+            <element signature="e#477#478#0" expanded="false" />
+            <element signature="e#504#505#0" expanded="false" />
+            <element signature="e#544#545#0" expanded="false" />
+            <element signature="e#576#577#0" expanded="false" />
+            <element signature="e#607#608#0" expanded="false" />
+            <element signature="e#633#634#0" expanded="false" />
+            <element signature="e#672#673#0" expanded="false" />
+            <element signature="e#702#703#0" expanded="false" />
+            <element signature="e#735#736#0" expanded="false" />
+            <element signature="e#761#762#0" expanded="false" />
+            <element signature="e#802#803#0" expanded="false" />
+            <element signature="e#832#833#0" expanded="false" />
+            <element signature="e#873#874#0" expanded="false" />
+            <element signature="e#903#904#0" expanded="false" />
+            <element signature="e#956#957#0" expanded="false" />
+            <element signature="e#996#997#0" expanded="false" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/jangz/syntax/stream/UseJavaStream.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="84">
+          <caret line="8" column="14" lean-forward="false" selection-start-line="8" selection-start-column="14" selection-end-line="8" selection-end-column="14" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -954,7 +940,37 @@
         <state relative-caret-position="162">
           <caret line="9" column="0" lean-forward="true" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
           <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_73.jdk/Contents/Home/src.zip!/java/util/function/Predicate.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-997">
+          <caret line="39" column="17" lean-forward="false" selection-start-line="39" selection-start-column="17" selection-end-line="39" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/jangz/newfeature/chap1/FilteringApples.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="361">
+          <caret line="31" column="0" lean-forward="true" selection-start-line="31" selection-start-column="0" selection-end-line="31" selection-end-column="0" />
+          <folding>
             <element signature="imports" expanded="true" />
+            <element signature="e#1835#1836#0" expanded="true" />
+            <element signature="e#1890#1891#0" expanded="true" />
+            <element signature="e#1945#1946#0" expanded="true" />
+            <element signature="e#1991#1992#0" expanded="true" />
+            <element signature="e#2542#2543#0" expanded="true" />
+            <element signature="e#2579#2580#0" expanded="true" />
+            <element signature="e#2624#2625#0" expanded="true" />
+            <element signature="e#2668#2669#0" expanded="true" />
+            <element signature="e#2704#2705#0" expanded="true" />
+            <element signature="e#2740#2741#0" expanded="true" />
+            <element signature="e#2786#2787#0" expanded="true" />
+            <element signature="e#2828#2829#0" expanded="true" />
           </folding>
         </state>
       </provider>
