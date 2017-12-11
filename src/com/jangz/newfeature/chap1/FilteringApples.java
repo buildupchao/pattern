@@ -1,9 +1,11 @@
 package com.jangz.newfeature.chap1;
 
 import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.List;
 import java.util.function.Predicate;
+
+import com.jangz.newfeature.entity.Apple;
+import com.jangz.newfeature.util.factory.AppleFactory;
 
 /**
  * Created by yachao on 17/12/10.
@@ -11,9 +13,7 @@ import java.util.function.Predicate;
 public class FilteringApples {
 
     public static void main(String[] args) {
-        List<Apple> inventory = Arrays.asList(new Apple(80, "green"),
-                new Apple(155, "green"),
-                new Apple(120, "red"));
+        List<Apple> inventory = AppleFactory.generateInventory();
 
 //        filterGreenApples(inventory).stream().forEach(System.out::println);
 
@@ -66,39 +66,5 @@ public class FilteringApples {
             }
         }
         return result;
-    }
-
-    static class Apple {
-        private int weight = 0;
-        private String color = "";
-
-        public Apple(int weight, String color) {
-            this.weight = weight;
-            this.color = color;
-        }
-
-        public int getWeight() {
-            return weight;
-        }
-
-        public void setWeight(int weight) {
-            this.weight = weight;
-        }
-
-        public String getColor() {
-            return color;
-        }
-
-        public void setColor(String color) {
-            this.color = color;
-        }
-
-        @Override
-        public String toString() {
-            return "Apple{" +
-                    "weight=" + weight +
-                    ", color='" + color + '\'' +
-                    '}';
-        }
     }
 }
