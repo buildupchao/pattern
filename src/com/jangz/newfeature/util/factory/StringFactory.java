@@ -12,4 +12,8 @@ public class StringFactory {
 	public static List<String> generateSingleCharacterList() {
 		return Arrays.asList("a", "b", "A", "B");
 	}
+	
+	public static List<String> generateTermList() {
+		return Arrays.asList("Java8", "In", "Action");
+	}
 }
