@@ -11,6 +11,8 @@ public class Cache {
 	private boolean expired;
 
 	public Cache() {
+		setTimeOut(System.currentTimeMillis() + 1000 * 60 * 60 * 24);
+		setExpired(false);
 	}
 
 	public Cache(String key, Object value, long timeOut, boolean expired) {
