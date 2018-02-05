@@ -13,20 +13,26 @@ public class Algorithmeric {
 	int orderNo;
 	int[][] result;
 
-	public Algorithmeric input() {
+	private Algorithmeric input() {
+		System.out.print("Please entry a number:");
 		reader = new BufferedReader(new InputStreamReader(System.in));
-
+		newLine();
+		
 		try {
 			this.orderNo = Integer.parseInt(reader.readLine());
 		} catch (NumberFormatException e) {
-			log.warning("Read data from console input generates an NumberFormatException.");
+			log.warning("Read data from console input generates a NumberFormatException.");
 		} catch (IOException e) {
 			log.warning("Open Input stream generates an IOException.");
 		}
 		return this;
 	}
+	
+	private void newLine() {
+		System.out.println();
+	}
 
-	public Algorithmeric calculate() {
+	private Algorithmeric calculate() {
 		result = new int[orderNo][];
 
 		for (int row = 0; row < result.length; row++) {
@@ -39,7 +45,7 @@ public class Algorithmeric {
 		return this;
 	}
 
-	public void print() {
+	private void print() {
 		for (int i = 0; i < result.length; i++) {
 			for (int j = 0; j < result[i].length; j++) {
 				System.out.print((i + 1) + "*" + (j + 1) + " = " + result[i][j] + "  ");
@@ -48,7 +54,10 @@ public class Algorithmeric {
 		}
 	}
 
+	public void launch() {
+		input().calculate().print();
+	}
 	public static void main(String[] args) {
-		new Algorithmeric().input().calculate().print();
+		new Algorithmeric().launch();
 	}
 }
