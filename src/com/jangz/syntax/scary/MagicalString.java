@@ -7,7 +7,9 @@ public class MagicalString {
 	public static void main(String[] args) {
 //		basicExpression();
 //		charsetExpression();
-		specialExpression();
+//		specialExpression();
+//		advanceExpression();
+		moreAdvancedExpression();
 	}
 	
 	public static void basicExpression() {
@@ -46,5 +48,39 @@ public class MagicalString {
 		String s4 = new String("xyz");
 		String s5 = new String("xyz");
 		System.out.println(s4 == s5);
+	}
+	
+	public static void advanceExpression() {
+		String str1 = "s1";
+		String str2 = "s" + 1;
+		System.out.println("str1 == str2: " + (str1 == str2)); // true
+		
+		String str3 = "ab";
+		String str4 = "b";
+		String str5 = "a" + str4;
+		System.out.println("str3 == str5: " + (str3 == str5)); // false
+		
+		final String str6 = "b";
+		String str7 = "a" + str6;
+		System.out.println("str3 == str7: " + (str3 == str7)); // true
+		
+		final String str8 = getB();
+		String str9 = "a" + str8;
+		System.out.println("str3 == str9: " + (str3 == str9)); // false
+	}
+	
+	private static String getB() {
+		return "b";
+	}
+	
+	public static void moreAdvancedExpression() {
+		String str1 = "ab";
+		String str2 = "a";
+		String str3 = "b";
+		String str4 = str2 + str3;
+		System.out.println("str4 == str1: " + (str4 == str1)); // false
+		System.out.println("str4.intern() == str1: " + (str4.intern() == str1)); // true
+		System.out.println("str4 == str1.intern(): " + (str4 == str1.intern())); // false
+		System.out.println("str4.intern() == str1.intern(): " + (str4.intern() == str1.intern())); // true
 	}
 }
