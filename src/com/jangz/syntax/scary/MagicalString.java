@@ -1,0 +1,50 @@
+package com.jangz.syntax.scary;
+
+import java.io.UnsupportedEncodingException;
+
+public class MagicalString {
+	
+	public static void main(String[] args) {
+//		basicExpression();
+//		charsetExpression();
+		specialExpression();
+	}
+	
+	public static void basicExpression() {
+		String s1 = "abc";
+		StringBuffer s2 = new StringBuffer(s1);
+		System.out.println(s1.equals(s2)); // false
+		
+		StringBuffer s3 = new StringBuffer("abc");
+		System.out.println(s3.equals("abc")); // false
+		System.out.println(s3.toString().equals("abc")); // true
+	}
+	
+	public static void charsetExpression() {
+		try {
+			String s1 = "你好";
+			String s2 = new String(s1.getBytes("GB2312"), "ISO-8859-1");
+			System.out.printf("s2=%s", s2);
+		} catch (UnsupportedEncodingException e) {
+			e.printStackTrace();
+		}
+	}
+	
+	public static void specialExpression() {
+		String s1 = "a";
+		String s2 = s1.concat("");
+		String s3 = null;
+		new String(s1);
+		System.out.println(s1 == s2);
+		
+		// 运行时的类加载过程与实际执行某个代码片段，两者必须分开讨论才有那么点意义
+		/**
+		 * 合规范的JVM实现应该在类加载的过程中创建并驻留一个String实例作为常量来对应"xyz"字面量；
+		 * 具体是在类加载的resolve阶段进行的。这个常量是全局共享的，只在先前尚未有内容相同的字符串
+		 * 驻留过的前提下才需要创建新的String实例。
+		 */
+		String s4 = new String("xyz");
+		String s5 = new String("xyz");
+		System.out.println(s4 == s5);
+	}
+}
