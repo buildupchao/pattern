@@ -7,9 +7,9 @@ import java.util.concurrent.locks.Lock;
 import java.util.concurrent.locks.ReentrantLock;
 
 import com.google.common.collect.Lists;
-import com.jangz.distribution.registry.ProviderService;
+import com.jangz.distribution.service.ProviderService;
 
-public class WeightPollingClusterStrategyImpl implements ClusterStrategy {
+class WeightPollingClusterStrategyImpl implements ClusterStrategy {
 
 	private int index = 0;
 	private Lock lock = new ReentrantLock();

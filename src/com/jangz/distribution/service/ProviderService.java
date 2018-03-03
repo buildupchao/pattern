@@ -1,4 +1,4 @@
-package com.jangz.distribution.registry;
+package com.jangz.distribution.service;
 
 public interface ProviderService {
 

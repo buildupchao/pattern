@@ -2,7 +2,7 @@ package com.jangz.distribution.balance;
 
 import com.google.common.base.Objects;
 
-public enum ClusterStrategyEnum {
+enum ClusterStrategyEnum {
 	Random("Random"), WeightRandom("WeightRandom"), Polling("Polling"), WeightPolling("WeightPolling"), Hash("Hash");
 
 	private String name;

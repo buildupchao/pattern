@@ -4,9 +4,9 @@ import java.net.InetAddress;
 import java.net.UnknownHostException;
 import java.util.List;
 
-import com.jangz.distribution.registry.ProviderService;
+import com.jangz.distribution.service.ProviderService;
 
-public class HashClusterStrategyImpl implements ClusterStrategy {
+class HashClusterStrategyImpl implements ClusterStrategy {
 
 	@Override
 	public ProviderService select(List<ProviderService> providerServices) {

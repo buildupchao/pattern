@@ -2,8 +2,8 @@ package com.jangz.distribution.balance;
 
 import java.util.List;
 
-import com.jangz.distribution.registry.ProviderService;
+import com.jangz.distribution.service.ProviderService;
 
-public interface ClusterStrategy {
+interface ClusterStrategy {
 	ProviderService select(List<ProviderService> providerServices);
 }

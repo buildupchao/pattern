@@ -5,9 +5,9 @@ import java.util.List;
 import org.apache.commons.lang3.RandomUtils;
 
 import com.google.common.collect.Lists;
-import com.jangz.distribution.registry.ProviderService;
+import com.jangz.distribution.service.ProviderService;
 
-public class WeightRandomClusterStrategyImpl implements ClusterStrategy {
+class WeightRandomClusterStrategyImpl implements ClusterStrategy {
 
 	@Override
 	public ProviderService select(List<ProviderService> providerServices) {

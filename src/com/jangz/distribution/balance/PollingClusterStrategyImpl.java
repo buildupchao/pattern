@@ -6,9 +6,9 @@ import java.util.concurrent.TimeUnit;
 import java.util.concurrent.locks.Lock;
 import java.util.concurrent.locks.ReentrantLock;
 
-import com.jangz.distribution.registry.ProviderService;
+import com.jangz.distribution.service.ProviderService;
 
-public class PollingClusterStrategyImpl implements ClusterStrategy {
+class PollingClusterStrategyImpl implements ClusterStrategy {
 
 	private int index;
 	private Lock lock = new ReentrantLock();
