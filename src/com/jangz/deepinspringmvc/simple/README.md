@@ -14,7 +14,7 @@ bf:BeanFactoryTest
 
 => xmlBeanFactory: XmlBeanFactory
 
-3.1#, loadBeanDefinition(resource)
+3.1#, loadBeanDefinitions(resource)
 
 => reader: XmlBeanDefinitionReader
 
