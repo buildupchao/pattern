@@ -1,4 +1,4 @@
-###1 DefaultBeanDefinitionDocumentReader.class
+### 1 DefaultBeanDefinitionDocumentReader.class
 
 1#, 首先委托 BeanDefinitionParserDelegate 类的 parseBeanDefinitionElement 方法进行元素解析，
 返回 BeanDefinitionHolder 类型的实例 bdHolder, 经过这个方法后， bdHolder 实例已经包含我们配置文件中配置
@@ -34,7 +34,7 @@ protected void processBeanDefinition(Element ele, BeanDefinitionParserDelegate d
 }
 ```
 
-###2 BeanDefinitionParserDelegate.class
+### 2 BeanDefinitionParserDelegate.class
 
 1#, 提取元素的 id 以及 name 属性
 2#, 进一步解析其他所有属性并统一封装至 GenericBeanDefinition 类型的事例中
