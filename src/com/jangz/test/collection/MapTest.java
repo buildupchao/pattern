@@ -9,6 +9,7 @@ public class MapTest {
 		Map<String, Integer> map = new HashMap<>();
 		map.putAll(getMap());
 		map.put("f", 9);
+		map.put("A", 0);
 		map.forEach((key, value) -> {
 			System.out.println("key: " + key + ", value: " + value);
 		});
