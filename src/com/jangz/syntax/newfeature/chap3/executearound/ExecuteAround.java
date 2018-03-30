@@ -6,7 +6,7 @@ import java.io.IOException;
 
 public class ExecuteAround {
 
-	private static final String BASE_PATH = "src/com/jangz/newfeature/chap3/executearound";
+	private static final String BASE_PATH = "src/com/jangz/syntax/newfeature/chap3/executearound";
 	
 	public static void main(String[] args) throws IOException {
 //		System.out.println(processFile());
