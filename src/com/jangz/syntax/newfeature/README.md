@@ -29,5 +29,7 @@ if the task list contains more that N/4 elements {
 的实现。
 将子任务的执行结果合并起来通常是通过对其应用管道终止操作来实现的。
 
-[Java的fork/join框架就应用了该模式，只不过它是从线程池中为新的子任务分配线程而不是创建
-新的线程。](https://github.com/Zychaowill/ImgStore/blob/master/Java/images/2018-03-30_132953.bmp)
+Java的fork/join框架就应用了该模式，只不过它是从线程池中为新的子任务分配线程而不是创建
+新的线程。
+
+![](https://github.com/Zychaowill/ImgStore/blob/master/Java/images/2018-03-30_132953.bmp)
