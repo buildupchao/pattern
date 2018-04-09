@@ -3,7 +3,7 @@ package com.jangz.syntax.newfeature.lambda;
 import java.util.Map;
 
 import com.google.common.collect.Maps;
-import com.jangz.syntax.util.PrintlnUtils;
+import com.jangz.utils.PrintlnUtils;
 
 public class MapReplaceAllExample {
 

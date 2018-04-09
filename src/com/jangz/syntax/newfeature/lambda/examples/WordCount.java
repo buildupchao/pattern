@@ -6,7 +6,7 @@ import java.nio.file.Paths;
 import java.util.stream.IntStream;
 import java.util.stream.Stream;
 
-import com.jangz.syntax.util.PrintlnUtils;
+import com.jangz.utils.PrintlnUtils;
 
 public class WordCount {
 

@@ -3,6 +3,10 @@ package com.jangz.utils;
 import java.io.File;
 import java.io.FileOutputStream;
 import java.io.IOException;
+import java.util.Collection;
+import java.util.List;
+
+import org.apache.commons.collections.CollectionUtils;
 
 import lombok.extern.slf4j.Slf4j;
 
@@ -25,5 +29,15 @@ public class PrintlnUtils {
 		} catch (IOException e) {
 			log.error("PrintlnUtils#fprintln", e);
 		}
+	}
+	
+	public static <T> void println(List<T> list) {
+		if (CollectionUtils.isNotEmpty(list))
+			list.stream().forEach(el -> System.out.println(el));
+	}
+	
+	public static <T> void println(Collection<T> col) {
+		if (CollectionUtils.isNotEmpty(col))
+			col.stream().forEach(System.out::println);
 	}
 }

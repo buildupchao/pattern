@@ -6,7 +6,7 @@ import java.util.List;
 import org.apache.commons.lang3.StringUtils;
 
 import com.google.common.base.Splitter;
-import com.jangz.syntax.util.PrintlnUtils;
+import com.jangz.utils.PrintlnUtils;
 
 public class JoingString {
 	

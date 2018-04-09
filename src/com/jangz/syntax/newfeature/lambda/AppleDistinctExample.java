@@ -6,7 +6,7 @@ import java.util.stream.Collectors;
 import com.jangz.syntax.newfeature.entity.Apple;
 import com.jangz.syntax.newfeature.util.DistinctUtils;
 import com.jangz.syntax.newfeature.util.factory.AppleFactory;
-import com.jangz.syntax.util.PrintlnUtils;
+import com.jangz.utils.PrintlnUtils;
 
 public class AppleDistinctExample {
 

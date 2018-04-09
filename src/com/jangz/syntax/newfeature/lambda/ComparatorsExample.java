@@ -7,7 +7,7 @@ import com.google.common.base.Joiner;
 import com.jangz.syntax.newfeature.entity.Apple;
 import com.jangz.syntax.newfeature.util.ComparatorUtils;
 import com.jangz.syntax.newfeature.util.factory.IntegerFactory;
-import com.jangz.syntax.util.PrintlnUtils;
+import com.jangz.utils.PrintlnUtils;
 
 public class ComparatorsExample {
 
