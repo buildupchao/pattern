@@ -16,3 +16,14 @@ List list = Arrays.asList(str);
 <br/><br/>
 [强制] 泛型通配符 <? extends T> 来接收返回的数据，此写法的泛型集合不能使用 add 方法，而<? super T> 不能使用 get 方法，作为接口调用赋值时易出错。<br/>
 [说明] 扩展说一下 PECS （Producer Extends Consumer Super）原则：第一、频繁往外读取内容的，适合用 <? extends T>。第二、经常往里插入的，适合用 <? super T>。
+<br/><br/>
+[强制] 在JDK7版本及以上， Comparator 要满足如下三个条件，不然 Arrays.sort， Collections.sort 会报 IllegalArgumentException 异常。<br/>
+[说明] 三个条件如下:<br/>
+```
+1）x, y的比较结果和y, x的比较结果相反
+2）x>y, y>z, 则x>z
+3）x=y，则x，z比较结果和y，z比较结果相同
+```
+<br/><br/>
+[推荐] 高度注意 Map类集合 K/V能不能存储null值的情况，情况如下表：
+![](https://github.com/Zychaowill/ImgStore/blob/master/Java/images/2018-04-13_145555.bmp)
