@@ -8,7 +8,7 @@ public class Pattern<T> {
 	
 	private List<Matcher<T>> matches;
 
-	public Pattern(T t) {
+	private Pattern(T t) {
 		this.t = t;
 		matches = new ArrayList<>();
 	}
