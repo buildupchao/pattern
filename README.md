@@ -9,6 +9,8 @@ deep design pattern
 
 - ### [Simple Distributed Structure](https://github.com/Zychaowill/pattern/tree/master/src/com/jangz/distribution)
 
+- ### [Cache](https://github.com/Zychaowill/pattern/tree/master/src/com/jangz/cache)
+
 - ### [Java classical syntax](https://github.com/Zychaowill/pattern/tree/master/src/com/jangz/syntax)
 
 - ### 看透Spring MVC源代码分析与实践
