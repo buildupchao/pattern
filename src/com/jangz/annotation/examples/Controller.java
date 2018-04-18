@@ -1,4 +1,4 @@
-package lunatic.annotation;
+package com.jangz.annotation.examples;
 
 import java.lang.annotation.Documented;
 import java.lang.annotation.ElementType;
