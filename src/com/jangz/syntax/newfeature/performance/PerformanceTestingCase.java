@@ -1,6 +1,7 @@
 package com.jangz.syntax.newfeature.performance;
 
 import java.util.function.Function;
+import java.util.stream.LongStream;
 import java.util.stream.Stream;
 
 public class PerformanceTestingCase {
@@ -34,6 +35,14 @@ public class PerformanceTestingCase {
 	public static long parallelSum(long n) {
 		return Stream.iterate(1L, i -> i + 1).limit(n).parallel().reduce(0L, Long::sum);
 	}
+	
+	public static long wrapperSum(long n) {
+		return LongStream.rangeClosed(0L, n).summaryStatistics().getSum();
+	}
+	
+	public static long simpleSum(long n) {
+		return LongStream.rangeClosed(0L, n).sum();
+	}
 
 	public static void main(String[] args) {
 		System.out
@@ -42,5 +51,9 @@ public class PerformanceTestingCase {
 			.println("Iterative sum done in: " + measureSumPer(PerformanceTestingCase::iterativeSum, 10_000_000));
 		System.out
 			.println("ParallelStream sum done in: " + measureSumPer(PerformanceTestingCase::parallelSum, 10_000_000));
+		System.out
+			.println("Wrapper sum done in: " + measureSumPer(PerformanceTestingCase::wrapperSum, 10_000_000));
+		System.out
+			.println("Simple sum done in: " + measureSumPer(PerformanceTestingCase::simpleSum, 10_000_000));
 	}
 }
