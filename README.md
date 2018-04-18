@@ -7,7 +7,7 @@ deep design pattern
 
 - ### [Coding Advice](https://github.com/Zychaowill/pattern/tree/master/src/com/jangz/adviceoof)
 
-- ### [simple distributed structure](https://github.com/Zychaowill/pattern/tree/master/src/com/jangz/distribution)
+- ### [Simple Distributed Structure](https://github.com/Zychaowill/pattern/tree/master/src/com/jangz/distribution)
 
 - ### [Java classical syntax](https://github.com/Zychaowill/pattern/tree/master/src/com/jangz/syntax)
 
