@@ -12,7 +12,7 @@ import java.util.Properties;
 
 public class DbHelper {
 
-	private static final String BASE = "src/com/jangz/database";
+	private static final String BASE = "src/main/java/com/jangz/database";
 
 	private String driverClassName;
 	private String url;
