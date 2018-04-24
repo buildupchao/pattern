@@ -4,6 +4,7 @@
 	<groupId>com.jangz</groupId>
 	<artifactId>pattern</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
+	<packaging>pom</packaging>
 
 	<properties>
 		<cglib.version>2.2.2</cglib.version>
@@ -71,25 +72,10 @@
             <version>23.0</version>
         </dependency>
 		<dependency>
-			<groupId>org.apache.zookeeper</groupId>
-			<artifactId>zookeeper</artifactId>
-			<version>3.4.8</version>
-		</dependency>
-		<dependency>
-			<groupId>com.github.sgroschupf</groupId>
-			<artifactId>zkclient</artifactId>
-			<version>0.1</version>
-		</dependency>
-		<dependency>
 			<groupId>org.springframework</groupId>
 			<artifactId>spring-context</artifactId>
 			<version>4.3.9.RELEASE</version>
 		</dependency>	
-		<dependency>
-		    <groupId>redis.clients</groupId>
-		    <artifactId>jedis</artifactId>
-		    <version>2.9.0</version>
-		</dependency>		
 	</dependencies>
 
 	<build>
@@ -113,4 +99,12 @@
 			</plugin>
 		</plugins>
 	</build>
+	<modules>
+		<module>pattern-distribution</module>
+		<module>pattern-common</module>
+		<module>pattern-tutor</module>
+		<module>pattern-coding-thinking</module>
+		<module>pattern-offer</module>
+		<module>pattern-design</module>
+	</modules>
 </project>
