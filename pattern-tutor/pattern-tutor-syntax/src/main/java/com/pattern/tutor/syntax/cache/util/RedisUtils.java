@@ -12,7 +12,7 @@ import redis.clients.jedis.Jedis;
 @Slf4j
 public class RedisUtils {
 	
-	public static final String DEFAULT_PATH = "src/com/jangz/cache";
+	public static final String DEFAULT_PATH = "src/main/java/com/pattern/tutor/syntax/cache";
 	
 	public static Jedis connect() {
 		Properties properties = new Properties();

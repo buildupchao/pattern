@@ -8,7 +8,7 @@ public class WrapperData {
 		SqlHelper sqlHelper = new SqlHelper();
 		/*sqlHelper.setPrefix("'");
 		sqlHelper.setSuffix("'");*/
-		sqlHelper.loadData(System.getProperty("user.dir") + "/src/main/java/com/jangz/database/userid.sql");
+		sqlHelper.loadData(System.getProperty("user.dir") + "/src/main/java/com/pattern/tutor/syntax/database/userid.sql");
 		sqlHelper.fire();
 		sqlHelper.groupBy();
 		System.out.println("DONE.");
