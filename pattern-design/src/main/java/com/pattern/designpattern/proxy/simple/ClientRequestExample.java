@@ -1,0 +1,23 @@
+package com.pattern.designpattern.proxy.simple;
+
+import com.pattern.designpattern.proxy.beans.HappinessLaundry;
+
+import lombok.extern.slf4j.Slf4j;
+
+@Slf4j
+public class ClientRequestExample {
+
+	public static void main(String[] args) {
+		LaundryProxy proxy = new LaundryProxy(new HappinessLaundry());
+		proxy.wash();
+		try {
+			log.info("Laundry is closing...");
+			Thread.sleep(3000);
+			log.info("Laundry is opening!!!");
+		} catch (InterruptedException e) {
+			e.printStackTrace();
+		}
+		
+		proxy.dryCleaning();
+	}
+}
