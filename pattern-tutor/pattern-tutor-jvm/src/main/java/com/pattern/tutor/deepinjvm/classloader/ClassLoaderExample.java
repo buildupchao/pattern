@@ -1,4 +1,4 @@
-package com.pattern.tutor.deepinjvm;
+package com.pattern.tutor.deepinjvm.classloader;
 
 public class ClassLoaderExample {
 	public static void main(String[] args) {

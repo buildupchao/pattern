@@ -1,4 +1,4 @@
-package com.pattern.tutor.deepinjvm;
+package com.pattern.tutor.deepinjvm.bytecode;
 
 public class FirstExample {
 
