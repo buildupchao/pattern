@@ -11,7 +11,7 @@ deep design pattern
 	- chapter 6 [详解Servlet](https://blog.csdn.net/qq_17776287/article/details/78118769)
 	- [Bean 装载流程](https://github.com/Zychaowill/pattern/tree/master/src/main/java/com/jangz/deepinspringmvc/simple)
 
-- ### [Java 8 in Action](https://github.com/Zychaowill/pattern/tree/master/src/main/java/com/jangz/syntax/newfeature)
+- ### [Java 8 in Action](https://github.com/Zychaowill/pattern/tree/master/src/main/java/com/jangz/syntax/action/newfeature)
 
 - ### [Coding Advice](https://github.com/Zychaowill/pattern/tree/master/src/main/java/com/jangz/adviceoof)
 
