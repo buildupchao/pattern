@@ -1,0 +1,49 @@
+Compiled from "FirstExample.java"
+public class com.jangz.deepinjvm.FirstExample {
+  public com.jangz.deepinjvm.FirstExample();
+    Code:
+       0: aload_0
+       1: invokespecial #1                  // Method java/lang/Object."<init>":()V
+       4: aload_0
+       5: iconst_1
+       6: putfield      #2                  // Field m:I
+       9: aload_0
+      10: iconst_2
+      11: putfield      #3                  // Field n:I
+      14: return
+
+  public static void methodOne(int);
+    Code:
+       0: iconst_0
+       1: istore_1
+       2: iload_0
+       3: iload_1
+       4: iadd
+       5: istore_2
+       6: iload_2
+       7: invokestatic  #4                  // Method methodTwo:(I)I
+      10: istore_3
+      11: getstatic     #5                  // Field java/lang/System.out:Ljava/io/PrintStream;
+      14: iload_3
+      15: invokevirtual #6                  // Method java/io/PrintStream.println:(I)V
+      18: return
+
+  public static int methodTwo(int);
+    Code:
+       0: iload_0
+       1: iconst_2
+       2: imul
+       3: ireturn
+
+  public static void main(java.lang.String[]);
+    Code:
+       0: bipush        8
+       2: invokestatic  #7                  // Method methodOne:(I)V
+       5: return
+
+  static {};
+    Code:
+       0: iconst_3
+       1: putstatic     #8                  // Field k:I
+       4: return
+}
