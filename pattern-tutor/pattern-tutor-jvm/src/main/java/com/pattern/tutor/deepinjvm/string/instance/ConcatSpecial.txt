@@ -1,0 +1,24 @@
+Compiled from "ConcatSpecial.java"
+public class com.pattern.tutor.deepinjvm.string.instance.ConcatSpecial {
+  public com.pattern.tutor.deepinjvm.string.instance.ConcatSpecial();
+    Code:
+       0: aload_0
+       1: invokespecial #1                  // Method java/lang/Object."<init>":()V
+       4: return
+
+  public static void main(java.lang.String[]);
+    Code:
+       0: ldc           #2                  // String z
+       2: astore_1
+       3: aload_1
+       4: ldc           #3                  // String
+       6: invokevirtual #4                  // Method java/lang/String.concat:(Ljava/lang/String;)Ljava/lang/String;
+       9: astore_2
+      10: aload_1
+      11: ldc           #5                  // String y
+      13: invokevirtual #4                  // Method java/lang/String.concat:(Ljava/lang/String;)Ljava/lang/String;
+      16: astore_3
+      17: aconst_null
+      18: astore        4
+      20: return
+}

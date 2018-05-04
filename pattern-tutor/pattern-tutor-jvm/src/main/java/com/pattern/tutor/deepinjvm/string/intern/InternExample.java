@@ -1,4 +1,4 @@
-package com.pattern.tutor.deepinjvm.intern;
+package com.pattern.tutor.deepinjvm.string.intern;
 
 /**
  * Since JDK 1.7+ 
