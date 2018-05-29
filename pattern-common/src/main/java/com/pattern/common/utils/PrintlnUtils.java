@@ -13,7 +13,7 @@ import lombok.extern.slf4j.Slf4j;
 @Slf4j
 public class PrintlnUtils {
 	
-	private static final String DEFAULT_PACKAGE = "com/jangz/utils/logs.log";
+	private static final String DEFAULT_PACKAGE = "com/pattern/common/utils/logs.log";
 	private static final String DEFAULT = System.getProperty("user.dir") + File.separator + DEFAULT_PACKAGE;
 	
 	public static void println(Object content) {
@@ -39,5 +39,9 @@ public class PrintlnUtils {
 	public static <T> void println(Collection<T> col) {
 		if (CollectionUtils.isNotEmpty(col))
 			col.stream().forEach(System.out::println);
+	}
+	
+	public static void println(String format, Object... parameters) {
+		log.info(format, parameters);
 	}
 }
