@@ -14,15 +14,15 @@ public class RequestUtils {
 	 * So as to resolve the problem that cannot deliver too large data into get
 	 * request.
 	 */
-	public static List<List<?>> splitList(List<?> list, int len) {
+	public static <T> List<List<T>> splitList(List<T> list, int len) {
 		if (CollectionUtils.isEmpty(list))
-			return new ArrayList<List<?>>(0);
+			return new ArrayList<List<T>>(0);
 
 		int size = list.size();
 		int count = (size + len - 1) / len;
-		List<List<?>> result = new ArrayList<List<?>>(count);
+		List<List<T>> result = new ArrayList<List<T>>(count);
 		for (int i = 0; i < count; i++) {
-			List<?> subList = list.subList(i * len, ((i + 1) * len > size ? size : len * (i + 1)));
+			List<T> subList = list.subList(i * len, ((i + 1) * len > size ? size : len * (i + 1)));
 			result.add(subList);
 		}
 		return result;
