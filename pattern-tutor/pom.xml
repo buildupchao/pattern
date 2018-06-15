@@ -22,5 +22,6 @@
 		<module>pattern-tutor-jvm</module>
 		<module>pattern-tutor-springmvc</module>
 		<module>pattern-tutor-syntax</module>
+		<module>pattern-tutor-netty</module>
 	</modules>
 </project>
