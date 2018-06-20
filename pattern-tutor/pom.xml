@@ -23,5 +23,6 @@
 		<module>pattern-tutor-springmvc</module>
 		<module>pattern-tutor-syntax</module>
 		<module>pattern-tutor-netty</module>
+		<module>pattern-tutor-mysql</module>
 	</modules>
 </project>
