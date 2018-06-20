@@ -5,6 +5,8 @@ deep design pattern
 
 - ### [自己实现一个HashMap](https://github.com/Zychaowill/pattern/tree/master/pattern-tutor/pattern-tutor-syntax/src/main/java/com/pattern/tutor/syntax/datastructure/map)
 
+- ### [JVM](https://github.com/Zychaowill/pattern/tree/master/pattern-tutor/pattern-tutor-jvm)
+
 - ### 看透Spring MVC源代码分析与实践
 	- chapter 4 [Java中Socket的用法](https://github.com/Zychaowill/pattern/tree/master/pattern-tutor/pattern-tutor-springmvc/src/main/java/com/pattern/tutor/deepinspringmvc/socket)
 	- chapter 5 [自己动手实现HTTP协议](https://github.com/Zychaowill/pattern/tree/master/pattern-tutor/pattern-tutor-springmvc/src/main/java/com/pattern/tutor/deepinspringmvc/http)

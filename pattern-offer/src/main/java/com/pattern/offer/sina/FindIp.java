@@ -10,7 +10,7 @@ import java.util.Random;
 
 public class FindIp {
 	
-	private static final String BASEPATH = "src/com/jangz/offer/sina";
+	private static final String BASEPATH = "src/main/java/com/pattern/offer/sina";
 	
 	public static void main(String[] args) throws IOException {
 //		generateIp();
