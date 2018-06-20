@@ -144,8 +144,8 @@ JDK中体现：未发现<br/>
 
 - JDK 5 Codumentation
 
-- [http://stackoverflow.com/questions/1673841/examples-of-gof-design-patterns](http://stackoverflow.com/questions/1673841/examples-of-gof-design-patterns){:target="_blank"}
+- [http://stackoverflow.com/questions/1673841/examples-of-gof-design-patterns](http://stackoverflow.com/questions/1673841/examples-of-gof-design-patterns)
 
-- [http://java.csdn.net/a/20101129/282644.html](http://java.csdn.net/a/20101129/282644.html){:target="_blank"}
+- [http://java.csdn.net/a/20101129/282644.html](http://java.csdn.net/a/20101129/282644.html)
 
 - [JDK中设计模式](https://www.cnblogs.com/zhousysu/p/5483862.html)
