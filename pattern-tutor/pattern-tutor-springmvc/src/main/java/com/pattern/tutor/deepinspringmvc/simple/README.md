@@ -2,26 +2,26 @@ XmlBeanFactory初始化顺序:
 
 bf:BeanFactoryTest
 
-1#, new ClassPathResource('beanFactoryTest.xml')
+- 1#, new ClassPathResource('beanFactoryTest.xml')
 
-=> classPathResource: ClassPathResource
+	=> classPathResource: ClassPathResource
 
-2#, resource: Resource
+- 2#, resource: Resource
 
-=> bf: BeanFactoryTest
+	=> bf: BeanFactoryTest
 
-3#, new XmlBeanFactory(resource)
+- 3#, new XmlBeanFactory(resource)
 
-=> xmlBeanFactory: XmlBeanFactory
+	=> xmlBeanFactory: XmlBeanFactory
 
-3.1#, loadBeanDefinitions(resource)
+		- 3.1#, loadBeanDefinitions(resource)
 
-=> reader: XmlBeanDefinitionReader
+			=> reader: XmlBeanDefinitionReader
 
-3.2#, loadedBeanDefinitionNum: int
+		- 3.2#, loadedBeanDefinitionNum: int
 
-=> xmlBeanFactory: xmlBeanFactory
+			=> xmlBeanFactory: xmlBeanFactory
 
-4#, bf: BeanFactory
+- 4#, bf: BeanFactory
 
-=> bf: BeanFactoryTest
+	=> bf: BeanFactoryTest
