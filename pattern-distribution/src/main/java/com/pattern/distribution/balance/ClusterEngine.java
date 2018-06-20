@@ -17,8 +17,7 @@ public class ClusterEngine {
 		clusterStrategyMap.put(ClusterStrategyEnum.Hash, new HashClusterStrategyImpl());
 	}
 	
-	public static ClusterStrategy queryClusterStrategy(String clusterStrategy) {
-		ClusterStrategyEnum clusterStrategyEnum = ClusterStrategyEnum.queryByCode(clusterStrategy);
-		return clusterStrategyMap.getOrDefault(clusterStrategyEnum, DEFAULT);
+	public static ClusterStrategy selectClusterStrategy(ClusterStrategyEnum clusterStrategy) {
+		return clusterStrategyMap.getOrDefault(clusterStrategy, DEFAULT);
 	}
 }
