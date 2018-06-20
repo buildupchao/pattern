@@ -30,7 +30,7 @@
 
 #### 5.经典设计模式在JDK中的体现
 
-> Note: 26 examples for JDK source.
+> Note: 25 examples for JDK source.
 
 ##### 5.1 Singleton(单例)
 作用：保证类只有一个实例；提供一个全局访问点<br/>
