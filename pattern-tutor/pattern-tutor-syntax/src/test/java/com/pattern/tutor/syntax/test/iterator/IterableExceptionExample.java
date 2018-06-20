@@ -1,10 +1,10 @@
-package com.jangz.test.iterator;
+package com.pattern.tutor.syntax.test.iterator;
 
 import java.util.Arrays;
 import java.util.Iterator;
 import java.util.Random;
 
-import com.jangz.test.iterator.exception.IteratorException;
+import com.pattern.tutor.syntax.test.iterator.exception.IteratorException;
 
 public class IterableExceptionExample {
 	
@@ -34,7 +34,7 @@ public class IterableExceptionExample {
 				try {
 					iter.remove();
 					System.out.println("[removeByIterator] remove element: " + element);
-				} catch (Exception e) {
+				} catch (Exception e) {	
 					throw new IteratorException("[removeByIterator] element: " + element);
 				}
 			}

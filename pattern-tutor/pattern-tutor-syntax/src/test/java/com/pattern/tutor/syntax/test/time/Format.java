@@ -1,4 +1,4 @@
-package com.jangz.test.time;
+package com.pattern.tutor.syntax.test.time;
 
 import java.text.SimpleDateFormat;
 import java.util.Date;

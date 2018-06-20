@@ -1,4 +1,4 @@
-package com.jangz.test.collection;
+package com.pattern.tutor.syntax.test.collection;
 
 import java.util.HashMap;
 import java.util.Map;

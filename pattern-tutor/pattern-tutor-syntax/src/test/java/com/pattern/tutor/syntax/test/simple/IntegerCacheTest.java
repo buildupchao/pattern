@@ -1,4 +1,4 @@
-package com.jangz.test.simple;
+package com.pattern.tutor.syntax.test.simple;
 
 import java.util.Objects;
 

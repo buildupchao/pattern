@@ -1,4 +1,4 @@
-package com.jangz.test.iterator;
+package com.pattern.tutor.syntax.test.iterator;
 
 import java.util.Arrays;
 import java.util.Iterator;

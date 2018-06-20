@@ -1,4 +1,4 @@
-package com.jangz.test.iterator;
+package com.pattern.tutor.syntax.test.iterator;
 
 import java.util.ArrayList;
 import java.util.Iterator;
@@ -6,7 +6,7 @@ import java.util.List;
 import java.util.Random;
 import java.util.stream.Collectors;
 
-import com.jangz.test.iterator.exception.IteratorException;
+import com.pattern.tutor.syntax.test.iterator.exception.IteratorException;
 
 public class IteratorExceptionExample {
 	

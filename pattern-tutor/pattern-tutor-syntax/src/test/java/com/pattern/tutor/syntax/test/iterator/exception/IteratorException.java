@@ -1,4 +1,4 @@
-package com.jangz.test.iterator.exception;
+package com.pattern.tutor.syntax.test.iterator.exception;
 
 public class IteratorException extends RuntimeException {
 

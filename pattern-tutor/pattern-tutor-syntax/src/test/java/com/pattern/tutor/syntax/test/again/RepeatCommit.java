@@ -1,4 +1,4 @@
-package com.jangz.test.again;
+package com.pattern.tutor.syntax.test.again;
 
 public class RepeatCommit {
 	

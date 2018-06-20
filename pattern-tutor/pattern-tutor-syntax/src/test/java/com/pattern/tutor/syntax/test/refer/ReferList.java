@@ -1,4 +1,4 @@
-package com.jangz.test.refer;
+package com.pattern.tutor.syntax.test.refer;
 
 import java.util.ArrayList;
 import java.util.LinkedList;
