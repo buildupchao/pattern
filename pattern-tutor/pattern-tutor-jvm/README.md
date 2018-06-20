@@ -8,6 +8,10 @@
 
 [线上问题排查](https://hacpai.com/article/1472285294159)
 
+[垃圾优先型垃圾回收器](http://www.oracle.com/technetwork/cn/articles/java/g1gc-1984535-zhs.html)
+
+[MAT](http://inter12.iteye.com/blog/1407492)
+
 Sun HotSpot VM，是JDK和Open JDK中自带的虚拟机，也是目前使用范围最广的Java虚拟机。<br/>
 
 ### JVM内存分布<br/>
