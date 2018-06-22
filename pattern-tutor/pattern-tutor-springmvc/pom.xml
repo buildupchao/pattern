@@ -7,7 +7,7 @@
 		<version>0.0.1-SNAPSHOT</version>
 	</parent>
 	<artifactId>pattern-tutor-springmvc</artifactId>
-	<name>Patter-tutor sub-project for deep in Spring MVC.</name>
+	<description>Patter-tutor sub-project for deep in Spring MVC.</description>
 	
 	<dependencies>
 		<dependency>

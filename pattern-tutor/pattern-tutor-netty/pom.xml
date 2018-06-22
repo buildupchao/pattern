@@ -8,7 +8,7 @@
 	</parent>
 	<groupId>com.pattern.tutor.netty</groupId>
 	<artifactId>pattern-tutor-netty</artifactId>
-	<name>Patter-tutor sub-project for Netty.</name>
+	<description>Patter-tutor sub-project for Netty.</description>
 
 	<dependencies>
 		<dependency>

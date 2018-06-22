@@ -6,7 +6,9 @@
 		<artifactId>pattern</artifactId>
 		<version>0.0.1-SNAPSHOT</version>
 	</parent>
+	<groupId>com.jangz</groupId>
 	<artifactId>pattern-common</artifactId>
+	<version>0.0.1-SNAPSHOT</version>
 	<packaging>jar</packaging>
 	<name>pattern-common</name>
 	<description>Pattern sub-project for utils.</description>
