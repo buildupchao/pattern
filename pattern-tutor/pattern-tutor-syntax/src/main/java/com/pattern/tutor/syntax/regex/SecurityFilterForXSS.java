@@ -1,7 +1,11 @@
 package com.pattern.tutor.syntax.regex;
 
+import java.util.Optional;
 import java.util.StringTokenizer;
 
+import lombok.extern.slf4j.Slf4j;
+
+@Slf4j
 public class SecurityFilterForXSS {
 
 	public static void main(String[] args) {
@@ -13,7 +17,7 @@ public class SecurityFilterForXSS {
 		result = securityFilterForXSS(value, false, true, false);
 		System.out.printf("result is %s.\n", result);
 		
-		value = "My name is jangz.";
+		value = "My name is jangz.%%%%%%%%/\4\"";
 		result = securityFilterForXSS(value, false, false, true);
 		System.out.printf("result is %s.\n", result);
 		
@@ -60,8 +64,40 @@ public class SecurityFilterForXSS {
 		} else if (isCharType) {
 			result = value.replaceAll("<|>|/|%\\'|\"|&", "");
 		} else if (isTextType) {
-			result = "non";
+			result = encode4Html(value);
 		}
 		return result;
+	}
+	
+	public static String encode4Html(String value) {
+		log.info("the input is " + value);
+		value = Optional.ofNullable(value).orElse("");
+		if (value.equals(""))
+			return "";
+		StringBuffer result = new StringBuffer();
+		for (int i = 0; i < value.length(); i++) {
+			char ch = value.charAt(i);
+			if (ch == '<')
+				result.append("&lt;");
+			else if (ch == '>')
+				result.append("&gt;");
+			else if (ch == '&')
+				result.append("&amp;");
+			else if (ch == '"')
+				result.append("&quot;");
+			else if (ch == '\r')
+				result.append("<BR>");
+			else if (ch == '\n') {
+				if (value.charAt(i - 1) == '\r') {
+				} else
+					result.append("<BR>");
+			} else if (ch == '\t')
+				result.append("&nbsp;&nbsp;&nbsp;&nbsp");
+			else if (ch == ' ')
+				result.append("&nbsp;");
+			else
+				result.append(ch);
+		}
+		return result.toString();
 	}
 }
