@@ -3,7 +3,7 @@ deep design pattern
 
 - ### [深入设计模式](https://github.com/Zychaowill/pattern/tree/master/pattern-design/src/main/java/com/pattern/designpattern)
 
-- ### [自己实现一个HashMap](https://github.com/Zychaowill/pattern/tree/master/pattern-tutor/pattern-tutor-syntax/src/main/java/com/pattern/tutor/syntax/datastructure/map)
+- ### [自己实现一个HashMap](https://github.com/Zychaowill/pattern/tree/master/pattern-tutor/pattern-tutor-syntax/src/main/java/com/pattern/tutor/syntax/collection/custom/map)
 
 - ### [JVM](https://github.com/Zychaowill/pattern/tree/master/pattern-tutor/pattern-tutor-jvm)
 
