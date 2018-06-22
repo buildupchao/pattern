@@ -12,6 +12,7 @@ deep design pattern
 	- chapter 5 [自己动手实现HTTP协议](https://github.com/Zychaowill/pattern/tree/master/pattern-tutor/pattern-tutor-springmvc/src/main/java/com/pattern/tutor/deepinspringmvc/http)
 	- chapter 6 [详解Servlet](https://blog.csdn.net/qq_17776287/article/details/78118769)
 	- [Bean 装载流程](https://github.com/Zychaowill/pattern/tree/master/pattern-tutor/pattern-tutor-springmvc/src/main/java/com/pattern/tutor/deepinspringmvc/simple)
+	- [v5](https://github.com/Zychaowill/pattern/tree/master/pattern-tutor/pattern-tutor-springmvc/src/main/java/com/pattern/tutor/deepinspringmvc/v5)
 
 - ### [Java 8 in Action](https://github.com/Zychaowill/pattern/tree/master/pattern-tutor/pattern-tutor-syntax/src/main/java/com/pattern/tutor/syntax/action/newfeature/java8)
 
