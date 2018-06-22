@@ -78,9 +78,9 @@ ParameterMappingTokenHandler的handlerToken方法中，完成了添加参数映�
 
 ### MySQL数据库
 
-- [建表规约](https://github.com/Zychaowill/pattern/blob/master/src/com/jangz/syntax/database/CREATE_TABLE.md)
+- [建表规约](https://github.com/Zychaowill/pattern/blob/master/pattern-tutor/pattern-tutor-syntax/src/main/java/com/pattern/tutor/syntax/database/CREATE_TABLE.md)
 
-- [索引规约](https://github.com/Zychaowill/pattern/blob/master/src/com/jangz/syntax/database/INDEX_DEAL.md)
+- [索引规约](https://github.com/Zychaowill/pattern/blob/master/pattern-tutor/pattern-tutor-syntax/src/main/java/com/pattern/tutor/syntax/database/INDEX_DEAL.md)
 
 - [SQL语句]()
 
