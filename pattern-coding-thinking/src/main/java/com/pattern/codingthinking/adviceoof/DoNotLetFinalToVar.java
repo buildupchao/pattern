@@ -11,8 +11,8 @@ public class DoNotLetFinalToVar {
 		System.out.println("RAND_CONST_4: " + Const.RAND_CONST);
 		System.out.println("RAND_CONST_5: " + Const.RAND_CONST);
 	}
-}
 
-interface Const {
-	public static final int RAND_CONST = new Random().nextInt();
+	interface Const {
+		public static final int RAND_CONST = new Random().nextInt();
+	}
 }
