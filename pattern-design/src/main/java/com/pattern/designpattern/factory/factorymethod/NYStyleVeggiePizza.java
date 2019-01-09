@@ -1,4 +1,4 @@
-package com.pattern.designpattern.factory;
+package com.pattern.designpattern.factory.factorymethod;
 
 public class NYStyleVeggiePizza extends Pizza {
 

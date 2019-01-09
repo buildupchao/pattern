@@ -1,4 +1,4 @@
-package com.pattern.designpattern.factory;
+package com.pattern.designpattern.factory.factorymethod;
 
 import java.util.ArrayList;
 import java.util.List;
