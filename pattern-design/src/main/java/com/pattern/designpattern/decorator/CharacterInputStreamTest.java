@@ -14,7 +14,7 @@ public class CharacterInputStreamTest {
 	public static void main(String[] args) {
 		int c;
 		String env = System.getProperty("user.dir");
-		String testFilePath = env + File.separator + "src/com/jangz/pattern/decorator/test2.txt";
+		String testFilePath = env + File.separator + "src/main/java/com/pattern/designpattern/decorator/test2.txt";
 		
 		CharacterInputStream in = null;
 		try {
