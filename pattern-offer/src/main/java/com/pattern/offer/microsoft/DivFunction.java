@@ -1,4 +1,4 @@
-package com.pattern.offer.constru;
+package com.pattern.offer.microsoft;
 
 import java.util.Random;
 import java.util.logging.Level;

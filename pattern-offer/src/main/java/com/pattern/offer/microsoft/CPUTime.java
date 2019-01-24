@@ -1,4 +1,4 @@
-package com.pattern.offer.constru;
+package com.pattern.offer.microsoft;
 
 public class CPUTime {
 	
