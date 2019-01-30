@@ -7,7 +7,7 @@ import java.util.Random;
 import java.util.stream.Collectors;
 
 /**
- * Created by yachao on 2018/6/22.
+ * Created by buildupchao on 2018/6/22.
  */
 @Slf4j
 public class QuickFindValue {
