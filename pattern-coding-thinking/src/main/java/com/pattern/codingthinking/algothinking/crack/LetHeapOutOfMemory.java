@@ -1,7 +1,15 @@
 package com.pattern.codingthinking.algothinking.crack;
 
 import java.util.ArrayList;
+import java.util.List;
 
+/**
+ * Test heap OutOfMemoryError issue
+ * JVM args: -Xms20m -Xmx20m -XX:+HeapDumpOnOutOfMemoryError -XX:HeapDumpPath=/tmp
+ * @author buildupchao
+ *         Date: 2019/01/30 15:45
+ * @since JDK 1.8
+ */
 public class LetHeapOutOfMemory {
 	
 	public static void main(String[] args) {
@@ -10,10 +18,9 @@ public class LetHeapOutOfMemory {
 	}
 	
 	public void testHeap() {
-		int size = 200_000_000;
+		List<String> list = new ArrayList<>(10);
 		while (true) {
-			ArrayList<Integer> list = new ArrayList<>(size);
-			size = list.size();
+			list.add("1");
 		}
 	}
 }
