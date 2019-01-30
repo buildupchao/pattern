@@ -1,3 +1,3 @@
 # Introduction
 
-`pattern`: 一个至高无上的综合技能
+`pattern`: 一个Java职业发展路线指向标

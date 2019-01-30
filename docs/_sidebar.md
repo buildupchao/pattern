@@ -1,10 +1,11 @@
-- 编程思想
+- 编程建议
     
-    - [编程思想](pattern-coding-thinking/pattern-coding-thinking.md)
+    - [编写高质量代码的建议](pattern-coding-thinking/pattern-coding-thinking.md)
     
 - 设计模式
 
-    - [设计模式](pattern-design/pattern-design.md)
+    - [OO原则](pattern-design/oo-principle.md)
+    - [责任链模式](pattern-design/responsibility-chain.md)
     
 - 分布式
 
