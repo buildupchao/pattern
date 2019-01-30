@@ -1,6 +1,6 @@
 
 
-<img src="_media/pattern.png" width="400" />
+<img src="_media/pattern.png" width="600" />
 
 `pattern`: 一个Java发展路线指向标
 
