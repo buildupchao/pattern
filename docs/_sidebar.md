@@ -7,9 +7,9 @@
     - [OO原则](pattern-design/oo-principle.md)
     - [责任链模式](pattern-design/responsibility-chain.md)
     
-- 分布式
+- 分布式架构设计与实现
 
-    - [分布式](pattern-distribution/pattern-distribution.md)
+    - [设计并实现一个RPC框架](pattern-distribution/rpc-design.md)
     
 - Offer
 
