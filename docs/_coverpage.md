@@ -1,4 +1,5 @@
-![logo](_media/pattern.svg)
+
+<img src="_media/pattern.png" width="400" />
 
 > `pattern`: 一个Java发展路线指向标
 
