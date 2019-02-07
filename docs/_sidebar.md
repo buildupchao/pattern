@@ -15,6 +15,6 @@
 
     - [面经](pattern-offer/pattern-offer.md)
     
-- 教程
+- 项目经验相关
 
-    - [Spring Core教程](pattern-tutor/pattern-tutor.md)
+    - [如何保存/恢复Java应用程序核心内存数据现场？](pattern-tutor/java-core-data.md)
