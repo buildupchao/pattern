@@ -1,5 +1,5 @@
 package com.pattern.distribution.balance;
 
-enum ClusterStrategyEnum {
+public enum ClusterStrategyEnum {
 	Random, WeightRandom, Polling, WeightPolling, Hash;
 }

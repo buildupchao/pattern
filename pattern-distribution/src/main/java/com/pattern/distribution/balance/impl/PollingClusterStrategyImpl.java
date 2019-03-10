@@ -1,4 +1,4 @@
-package com.pattern.distribution.balance;
+package com.pattern.distribution.balance.impl;
 
 import java.util.List;
 import java.util.Objects;
@@ -6,9 +6,10 @@ import java.util.concurrent.TimeUnit;
 import java.util.concurrent.locks.Lock;
 import java.util.concurrent.locks.ReentrantLock;
 
+import com.pattern.distribution.balance.ClusterStrategy;
 import com.pattern.distribution.service.ProviderService;
 
-class PollingClusterStrategyImpl implements ClusterStrategy {
+public class PollingClusterStrategyImpl implements ClusterStrategy {
 
 	private int index;
 	private Lock lock = new ReentrantLock();

@@ -7,7 +7,7 @@ import org.springframework.beans.factory.support.BeanDefinitionBuilder;
 import org.springframework.beans.factory.support.DefaultListableBeanFactory;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 
-import com.pattern.distribution.balance.ClusterEngine;
+import com.pattern.distribution.balance.engine.ClusterEngine;
 
 import lombok.extern.slf4j.Slf4j;
 

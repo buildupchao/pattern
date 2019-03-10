@@ -4,6 +4,6 @@ import java.util.List;
 
 import com.pattern.distribution.service.ProviderService;
 
-interface ClusterStrategy {
+public interface ClusterStrategy {
 	ProviderService select(List<ProviderService> providerServices);
 }

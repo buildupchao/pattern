@@ -3,6 +3,7 @@ package com.pattern.distribution.balance;
 import java.util.Arrays;
 import java.util.List;
 
+import com.pattern.distribution.balance.engine.ClusterEngine;
 import org.junit.Test;
 
 import com.pattern.distribution.BaseTest;

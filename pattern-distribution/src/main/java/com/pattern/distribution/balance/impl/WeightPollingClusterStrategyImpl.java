@@ -1,4 +1,4 @@
-package com.pattern.distribution.balance;
+package com.pattern.distribution.balance.impl;
 
 import java.util.List;
 import java.util.Objects;
@@ -7,9 +7,10 @@ import java.util.concurrent.locks.Lock;
 import java.util.concurrent.locks.ReentrantLock;
 
 import com.google.common.collect.Lists;
+import com.pattern.distribution.balance.ClusterStrategy;
 import com.pattern.distribution.service.ProviderService;
 
-class WeightPollingClusterStrategyImpl implements ClusterStrategy {
+public class WeightPollingClusterStrategyImpl implements ClusterStrategy {
 
 	private int index = 0;
 	private Lock lock = new ReentrantLock();

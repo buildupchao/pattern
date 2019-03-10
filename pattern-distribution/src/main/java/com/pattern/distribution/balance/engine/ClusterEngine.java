@@ -1,8 +1,11 @@
-package com.pattern.distribution.balance;
+package com.pattern.distribution.balance.engine;
 
 import java.util.Map;
 
 import com.google.common.collect.Maps;
+import com.pattern.distribution.balance.ClusterStrategy;
+import com.pattern.distribution.balance.ClusterStrategyEnum;
+import com.pattern.distribution.balance.impl.*;
 
 public class ClusterEngine {
 	
