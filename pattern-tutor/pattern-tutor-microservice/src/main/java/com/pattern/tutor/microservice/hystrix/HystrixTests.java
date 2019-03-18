@@ -21,15 +21,9 @@ public class HystrixTests {
         HystrixRequestContext context = HystrixRequestContext.initializeContext();
         try {
             ProductService productService = new ProductService();
-            GetProductServiceCommand command1 = new GetProductServiceCommand(
-                    productService,
-                    1L
-            );
+            GetProductServiceCommand command1 = new GetProductServiceCommand(productService, 1L);
 
-            GetProductServiceCommand command2 = new GetProductServiceCommand(
-                    productService,
-                    1L
-            );
+            GetProductServiceCommand command2 = new GetProductServiceCommand(productService, 1L);
 
             command1.execute();
             command2.execute();
@@ -46,18 +40,9 @@ public class HystrixTests {
         HystrixRequestContext context = HystrixRequestContext.initializeContext();
         try {
             PriceService priceService = new PriceService();
-            GetPriceServiceCommand command1 = new GetPriceServiceCommand(
-                    priceService,
-                    1L
-            );
-            GetPriceServiceCommand command2 = new GetPriceServiceCommand(
-                    priceService,
-                    2L
-            );
-            GetPriceServiceCommand command3 = new GetPriceServiceCommand(
-                    priceService,
-                    3L
-            );
+            GetPriceServiceCommand command1 = new GetPriceServiceCommand(priceService, 1L);
+            GetPriceServiceCommand command2 = new GetPriceServiceCommand(priceService, 2L);
+            GetPriceServiceCommand command3 = new GetPriceServiceCommand(priceService, 3L);
 
             Future<Double> task1 = command1.queue();
             Future<Double> task2 = command2.queue();

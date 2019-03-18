@@ -3,7 +3,6 @@ package com.pattern.tutor.microservice.hystrix.service;
 import com.google.common.collect.Lists;
 import org.apache.commons.lang3.RandomUtils;
 
-import java.util.ArrayList;
 import java.util.List;
 
 /**
