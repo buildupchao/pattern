@@ -4,8 +4,13 @@ import com.netflix.hystrix.HystrixCommand;
 import com.netflix.hystrix.HystrixCommandGroupKey;
 import com.netflix.hystrix.HystrixCommandProperties;
 import com.netflix.hystrix.strategy.concurrency.HystrixRequestContext;
+import com.pattern.tutor.microservice.hystrix.service.PriceService;
 import com.pattern.tutor.microservice.hystrix.service.ProductService;
 import org.junit.Assert;
+import org.junit.Test;
+
+import java.util.concurrent.ExecutionException;
+import java.util.concurrent.Future;
 
 /**
  * @author buildupchao
@@ -14,7 +19,8 @@ import org.junit.Assert;
  */
 public class HystrixTests {
 
-    public static void main(String[] args) {
+    @Test
+    public void testHystrixCache() {
         HystrixCommandProperties.Setter commandProperties = HystrixCommandProperties.Setter()
                 .withExecutionIsolationStrategy(HystrixCommandProperties.ExecutionIsolationStrategy.THREAD)
                 .withRequestCacheEnabled(true);
@@ -43,6 +49,45 @@ public class HystrixTests {
 
             Assert.assertFalse(command1.isResponseFromCache());
             Assert.assertTrue(command2.isResponseFromCache());
+        } finally {
+            context.shutdown();
+        }
+    }
+
+    @Test
+    public void testHystrixMergeRequest() throws ExecutionException, InterruptedException {
+        HystrixCommandProperties.Setter commandProperties = HystrixCommandProperties.Setter()
+                .withExecutionIsolationStrategy(HystrixCommandProperties.ExecutionIsolationStrategy.THREAD)
+                .withRequestCacheEnabled(true);
+        HystrixCommand.Setter setter = HystrixCommand.Setter
+                .withGroupKey(HystrixCommandGroupKey.Factory.asKey("get-product-group"))
+                .andCommandPropertiesDefaults(commandProperties);
+
+        HystrixRequestContext context = HystrixRequestContext.initializeContext();
+        try {
+            PriceService priceService = new PriceService();
+            GetPriceServiceCommand command1 = new GetPriceServiceCommand(
+                    priceService,
+                    1L
+            );
+            GetPriceServiceCommand command2 = new GetPriceServiceCommand(
+                    priceService,
+                    2L
+            );
+            GetPriceServiceCommand command3 = new GetPriceServiceCommand(
+                    priceService,
+                    3L
+            );
+
+            Future<Double> task1 = command1.queue();
+            Future<Double> task2 = command2.queue();
+            Future<Double> task3 = command3.queue();
+
+            Double result1 = task1.get();
+            Double result2 = task2.get();
+            Double result3 = task3.get();
+
+            System.out.printf("result1=[%2f], result2=[%2f], result3=[%2f]\n", result1, result2, result3);
         } finally {
             context.shutdown();
         }

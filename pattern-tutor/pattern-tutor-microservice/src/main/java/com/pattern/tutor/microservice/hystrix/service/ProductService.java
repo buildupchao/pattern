@@ -8,6 +8,6 @@ package com.pattern.tutor.microservice.hystrix.service;
 public class ProductService {
 
     public String getProduct(Long id) {
-        return "new-follower";
+        return "new-follower-" + id;
     }
 }
