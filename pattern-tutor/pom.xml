@@ -24,5 +24,6 @@
 		<module>pattern-tutor-syntax</module>
 		<module>pattern-tutor-netty</module>
 		<module>pattern-tutor-mysql</module>
+		<module>pattern-tutor-microservice</module>
 	</modules>
 </project>
