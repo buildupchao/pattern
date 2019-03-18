@@ -1,8 +1,5 @@
 package com.pattern.tutor.microservice.hystrix;
 
-import com.netflix.hystrix.HystrixCommand;
-import com.netflix.hystrix.HystrixCommandGroupKey;
-import com.netflix.hystrix.HystrixCommandProperties;
 import com.netflix.hystrix.strategy.concurrency.HystrixRequestContext;
 import com.pattern.tutor.microservice.hystrix.service.PriceService;
 import com.pattern.tutor.microservice.hystrix.service.ProductService;
@@ -21,25 +18,15 @@ public class HystrixTests {
 
     @Test
     public void testHystrixCache() {
-        HystrixCommandProperties.Setter commandProperties = HystrixCommandProperties.Setter()
-                .withExecutionIsolationStrategy(HystrixCommandProperties.ExecutionIsolationStrategy.THREAD)
-                .withRequestCacheEnabled(true);
-
         HystrixRequestContext context = HystrixRequestContext.initializeContext();
         try {
             ProductService productService = new ProductService();
             GetProductServiceCommand command1 = new GetProductServiceCommand(
-                    HystrixCommand.Setter
-                            .withGroupKey(HystrixCommandGroupKey.Factory.asKey("get-product-group"))
-                            .andCommandPropertiesDefaults(commandProperties),
                     productService,
                     1L
             );
 
             GetProductServiceCommand command2 = new GetProductServiceCommand(
-                    HystrixCommand.Setter
-                            .withGroupKey(HystrixCommandGroupKey.Factory.asKey("get-product-group"))
-                            .andCommandPropertiesDefaults(commandProperties),
                     productService,
                     1L
             );
@@ -56,13 +43,6 @@ public class HystrixTests {
 
     @Test
     public void testHystrixMergeRequest() throws ExecutionException, InterruptedException {
-        HystrixCommandProperties.Setter commandProperties = HystrixCommandProperties.Setter()
-                .withExecutionIsolationStrategy(HystrixCommandProperties.ExecutionIsolationStrategy.THREAD)
-                .withRequestCacheEnabled(true);
-        HystrixCommand.Setter setter = HystrixCommand.Setter
-                .withGroupKey(HystrixCommandGroupKey.Factory.asKey("get-product-group"))
-                .andCommandPropertiesDefaults(commandProperties);
-
         HystrixRequestContext context = HystrixRequestContext.initializeContext();
         try {
             PriceService priceService = new PriceService();

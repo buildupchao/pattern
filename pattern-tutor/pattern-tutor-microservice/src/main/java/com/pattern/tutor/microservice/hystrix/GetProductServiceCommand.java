@@ -1,6 +1,8 @@
 package com.pattern.tutor.microservice.hystrix;
 
 import com.netflix.hystrix.HystrixCommand;
+import com.netflix.hystrix.HystrixCommandGroupKey;
+import com.netflix.hystrix.HystrixCommandProperties;
 import com.pattern.tutor.microservice.hystrix.service.ProductService;
 
 /**
@@ -13,8 +15,8 @@ public class GetProductServiceCommand extends HystrixCommand<String> {
     private ProductService productService;
     private Long id;
 
-    public GetProductServiceCommand(Setter setter, ProductService productService, Long id) {
-        super(setter);
+    public GetProductServiceCommand(ProductService productService, Long id) {
+        super(setter());
         this.productService = productService;
         this.id = id;
     }
@@ -27,5 +29,14 @@ public class GetProductServiceCommand extends HystrixCommand<String> {
     @Override
     protected String getCacheKey() {
         return "product-" + id;
+    }
+
+    private static Setter setter() {
+        HystrixCommandProperties.Setter commandProperties = HystrixCommandProperties.Setter()
+                .withExecutionIsolationStrategy(HystrixCommandProperties.ExecutionIsolationStrategy.THREAD)
+                .withRequestCacheEnabled(true);
+        return HystrixCommand.Setter
+                .withGroupKey(HystrixCommandGroupKey.Factory.asKey("get-product-group"))
+                .andCommandPropertiesDefaults(commandProperties);
     }
 }
