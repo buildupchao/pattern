@@ -22,7 +22,6 @@ public class HystrixTests {
         try {
             ProductService productService = new ProductService();
             GetProductServiceCommand command1 = new GetProductServiceCommand(productService, 1L);
-
             GetProductServiceCommand command2 = new GetProductServiceCommand(productService, 1L);
 
             command1.execute();
