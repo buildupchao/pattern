@@ -1,14 +1,18 @@
 package com.pattern.tutor.syntax.database.util;
 
+import org.joda.time.DateTime;
+
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.sql.Statement;
+import java.util.Arrays;
+import java.util.List;
 
 public class DBUtil {
 
-	private static final String url = "jdbc:mysql://localhost:3306/test";
+	private static final String url = "jdbc:mysql://120.92.42.115:3306/event-manager";
 	private static final String user = "root";
 	private static final String password = "root";
 
@@ -37,5 +41,30 @@ public class DBUtil {
 		} catch (SQLException ex) {
 
 		}
+	}
+
+	public static void main(String[] args) throws SQLException, InterruptedException {
+		insert();
+	}
+
+	public static void insert() throws SQLException, InterruptedException {
+		Connection connction = getConnction();
+		Statement statement = connction.createStatement();
+
+		List<Integer> appIds = Arrays.asList(170, 76);
+		for (int i = 510; i < 536; i++) {
+//			String date = new DateTime(System.currentTimeMillis()).toString("yyyy-MM-dd HH:mm:ss");
+			for (Integer appId : appIds) {
+				String sql = String.format("INSERT INTO app_debug(app_id, decode_log, create_time) values(%d, \"{'test':'%s'}\", now())",
+						appId,
+						"test" + i
+				);
+				statement.executeUpdate(sql);
+			}
+			Thread.sleep(2000);
+		}
+
+		close(connction, statement, null);
+		System.out.println("DONE");
 	}
 }
