@@ -44,22 +44,26 @@ public class DBUtil {
 	public static void main(String[] args) throws SQLException, InterruptedException {
 		new Thread(() -> {
 			try {
-				insert(600, 635);
-			} catch (Exception e) {
+				insert(2000, 2030);
+			} catch (SQLException e) {
+				e.printStackTrace();
+			} catch (InterruptedException e) {
 				e.printStackTrace();
 			}
 		}).start();
-		
+
 		new Thread(() -> {
 			try {
-				insert(700, 733);
-			} catch (Exception e) {
+				insert(1000, 1030);
+			} catch (SQLException e) {
+				e.printStackTrace();
+			} catch (InterruptedException e) {
 				e.printStackTrace();
 			}
 		}).start();
 	}
 
-	public static void insert(int start, int end) throws Exception {
+	public static void insert(int start, int end) throws SQLException, InterruptedException {
 		Connection connction = getConnction();
 		Statement statement = connction.createStatement();
 
