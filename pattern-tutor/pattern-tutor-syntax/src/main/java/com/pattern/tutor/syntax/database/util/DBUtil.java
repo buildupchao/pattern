@@ -1,7 +1,5 @@
 package com.pattern.tutor.syntax.database.util;
 
-import org.joda.time.DateTime;
-
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.ResultSet;
@@ -44,15 +42,29 @@ public class DBUtil {
 	}
 
 	public static void main(String[] args) throws SQLException, InterruptedException {
-		insert();
+		new Thread(() -> {
+			try {
+				insert(600, 635);
+			} catch (Exception e) {
+				e.printStackTrace();
+			}
+		}).start();
+		
+		new Thread(() -> {
+			try {
+				insert(700, 733);
+			} catch (Exception e) {
+				e.printStackTrace();
+			}
+		}).start();
 	}
 
-	public static void insert() throws SQLException, InterruptedException {
+	public static void insert(int start, int end) throws Exception {
 		Connection connction = getConnction();
 		Statement statement = connction.createStatement();
 
 		List<Integer> appIds = Arrays.asList(170, 76);
-		for (int i = 510; i < 536; i++) {
+		for (int i = start; i < end; i++) {
 //			String date = new DateTime(System.currentTimeMillis()).toString("yyyy-MM-dd HH:mm:ss");
 			for (Integer appId : appIds) {
 				String sql = String.format("INSERT INTO app_debug(app_id, decode_log, create_time) values(%d, \"{'test':'%s'}\", now())",

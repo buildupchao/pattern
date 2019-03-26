@@ -12,15 +12,19 @@ import java.util.Properties;
 
 public class DbHelper {
 
-	private static final String BASE = "src/main/java/com/pattern/tutor/syntax/database";
+	private String fileOutputPath;
 
 	private String driverClassName;
 	private String url;
 	private String username;
 	private String password;
 
+	public DbHelper(String fileOutputPath) {
+		this.fileOutputPath = fileOutputPath;
+	}
+
 	private void initParams() {
-		String pathname = System.getProperty("usr.dir") + "/" + BASE + "/jdbc.properties";
+		String pathname = fileOutputPath + "/jdbc.properties";
 		try {
 			InputStream inputStream = new BufferedInputStream(new FileInputStream(new File(pathname)));
 			Properties properties = new Properties();
@@ -29,6 +33,7 @@ public class DbHelper {
 			url = properties.getProperty("url");
 			username = properties.getProperty("username");
 			password = properties.getProperty("password");
+			System.out.printf("db config=[driverClassName=[%s], url=[%s], username=[%s], password=[%s]]\n", driverClassName, url, username, password);
 		} catch (IOException e) {
 			e.printStackTrace();
 		}
