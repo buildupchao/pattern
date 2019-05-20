@@ -23,3 +23,5 @@ deep design pattern
 - ### [Cache](https://github.com/Zychaowill/pattern/tree/master/pattern-tutor/pattern-tutor-syntax/src/main/java/com/pattern/tutor/syntax/cache)
 
 - ### [Java Classical Syntax](https://github.com/Zychaowill/pattern/tree/master/pattern-tutor/pattern-tutor-syntax/src/main/java/com/pattern/tutor/syntax)
+
+- ### [A collector of Java basic knowledge used for my bro](https://github.com/buildupchao/pattern/tree/master/pattern-collector-java)
