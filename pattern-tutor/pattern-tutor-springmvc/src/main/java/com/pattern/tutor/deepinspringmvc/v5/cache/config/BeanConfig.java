@@ -3,6 +3,8 @@ package com.pattern.tutor.deepinspringmvc.v5.cache.config;
 import com.google.common.cache.CacheBuilder;
 import com.google.common.cache.CacheLoader;
 import com.google.common.cache.LoadingCache;
+
+import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 
 import java.util.concurrent.TimeUnit;
@@ -15,7 +17,7 @@ import java.util.concurrent.TimeUnit;
 @Configuration
 public class BeanConfig {
 
-
+	@Bean
     public LoadingCache<String, String> buildCache() {
         return CacheBuilder.newBuilder()
                 .maximumSize(1000)
