@@ -17,5 +17,10 @@
 			<artifactId>hystrix-core</artifactId>
 			<version>1.5.2</version>
 		</dependency>
+		<dependency>
+		    <groupId>org.squirrelframework</groupId>
+		    <artifactId>squirrel-foundation</artifactId>
+		    <version>0.3.8</version>
+		</dependency>
 	</dependencies>
 </project>
