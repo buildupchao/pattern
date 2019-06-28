@@ -2,6 +2,7 @@
 deep design pattern
 
 设计模式 | Spring MVC源码分析 | Java8 Stream | 分布式服务框架 | Java经典语法 | 为my bro提供的Java基础知识  
+-----|----------------|-------------|----------|----------|--------------------
 
 - ### [深入设计模式](https://github.com/Zychaowill/pattern/tree/master/pattern-design/src/main/java/com/pattern/designpattern)
 
