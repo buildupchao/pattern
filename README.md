@@ -1,12 +1,10 @@
 # pattern
 deep design pattern
 
-设计<br/>模式 | Spring MVC<br/>源码分析 | Java8<br/>Stream | 分布式<br/>服务框架 | Java<br/>经典语法 | 为my bro提供的<br/>Java基础知识  
------|----------------|-------------|----------|----------|--------------------
+设计模式 | Spring MVC源码分析 | Java | 分布式  |  编程思想  | JVM | 数据库  
+-----|---------------|------|-----|------|----|-----
 
 - ### [深入设计模式](https://github.com/buildupchao/pattern/tree/master/pattern-design/src/main/java/com/pattern/designpattern)
-
-- ### [自己实现一个HashMap](https://github.com/buildupchao/pattern/tree/master/pattern-tutor/pattern-tutor-syntax/src/main/java/com/pattern/tutor/syntax/collection/custom/map)
 
 - ### [JVM](https://github.com/buildupchao/pattern/tree/master/pattern-tutor/pattern-tutor-jvm)
 
@@ -26,15 +24,16 @@ deep design pattern
 		- Webflux, 响应式编程
 	- [sparrow: 一个轻量级Spring MVC实现项目](https://github.com/buildupchao/sparrow)
 		
+- ### Java
+	- [Java 8 in Action](https://github.com/buildupchao/pattern/tree/master/pattern-tutor/pattern-tutor-syntax/src/main/java/com/pattern/tutor/syntax/action/newfeature/java8)
+	- [Java Classical Syntax](https://github.com/buildupchao/pattern/tree/master/pattern-tutor/pattern-tutor-syntax/src/main/java/com/pattern/tutor/syntax)
+		- [自己实现一个HashMap](https://github.com/buildupchao/pattern/tree/master/pattern-tutor/pattern-tutor-syntax/src/main/java/com/pattern/tutor/syntax/collection/custom/map)
+		- [Cache](https://github.com/buildupchao/pattern/tree/master/pattern-tutor/pattern-tutor-syntax/src/main/java/com/pattern/tutor/syntax/cache)
+	- [A collector of Java basic knowledge used for my bro](https://github.com/buildupchao/pattern/tree/master/pattern-collector-java)
+	
+- ### 编程思想
+	- [编程建议项](https://github.com/buildupchao/pattern/tree/master/pattern-coding-thinking/src/main/java/com/pattern/codingthinking/adviceoof)
 
-- ### [Java 8 in Action](https://github.com/buildupchao/pattern/tree/master/pattern-tutor/pattern-tutor-syntax/src/main/java/com/pattern/tutor/syntax/action/newfeature/java8)
-
-- ### [Coding Advice](https://github.com/buildupchao/pattern/tree/master/pattern-coding-thinking/src/main/java/com/pattern/codingthinking/adviceoof)
-
-- ### [Simple Distributed Structure](https://github.com/buildupchao/pattern/tree/master/pattern-distribution)
-
-- ### [Cache](https://github.com/buildupchao/pattern/tree/master/pattern-tutor/pattern-tutor-syntax/src/main/java/com/pattern/tutor/syntax/cache)
-
-- ### [Java Classical Syntax](https://github.com/buildupchao/pattern/tree/master/pattern-tutor/pattern-tutor-syntax/src/main/java/com/pattern/tutor/syntax)
-
-- ### [A collector of Java basic knowledge used for my bro](https://github.com/buildupchao/pattern/tree/master/pattern-collector-java)
+- ### 分布式
+	- [分布式服务框架](https://github.com/buildupchao/pattern/tree/master/pattern-distribution)
+	- [zns：设计一个分布式RPC框架](https://github.com/buildupchao/zns)
