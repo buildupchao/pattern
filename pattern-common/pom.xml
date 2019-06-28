@@ -12,4 +12,12 @@
 	<packaging>jar</packaging>
 	<name>pattern-common</name>
 	<description>Pattern sub-project for utils.</description>
+	
+	<dependencies>
+		<dependency>
+		    <groupId>com.blinkfox</groupId>
+		    <artifactId>mini-table</artifactId>
+		    <version>1.0.0</version>
+		</dependency>
+	</dependencies>
 </project>

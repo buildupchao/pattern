@@ -5,8 +5,8 @@ public class IgnoredExpression {
 	public static void likeFullRangeCheck() {
 		double a = Double.POSITIVE_INFINITY * 0;
 		double b = Double.POSITIVE_INFINITY * 0;
-		System.out.println("a: " + a);
-		System.out.println("b: " + b);
+		System.out.println("a: " + a); // a: NaN
+		System.out.println("b: " + b); // b: NaN
 		System.out.println("The checking result is " + (a > b || a <= b)); // false
 		
 		double c = Double.NaN;

@@ -1,4 +1,4 @@
-package com.pattern.tutor.syntax.scary;
+package com.pattern.tutor.syntax.core.datatypes;
 
 public class MagicalWrapper {
 	public static void main(String[] args) {
