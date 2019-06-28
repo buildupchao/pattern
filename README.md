@@ -1,6 +1,23 @@
 # pattern
 deep design pattern
 
+pattern刚开始只是一个作为设计模式总结汇总的项目，而后进行拆分且分包分模块行程当前模式。<br/>
+模块如下：
+
+- pattern-coding-thinking
+- pattern-collector-java
+- pattern-common
+- pattern-design
+- pattern-distribution
+- pattern-offer
+- pattern-tutor
+	- pattern-tutor-jvm
+	- pattern-tutor-mysql
+	- pattern-tutor-netty
+	- pattern-tutor-springmvc
+	- pattern-tutor-syntax
+<br/>
+
 [设计模式](#深入设计模式) | [Spring MVC源码分析](#看透spring-mvc源代码分析与实践) | [Java](#java) | [分布式](#分布式)  |  [编程思想](#编程思想)  | [JVM](#jvm) | [数据库](#数据库)  
 -----|---------------|------|-----|------|----|-----
 
