@@ -1,12 +1,14 @@
 # pattern
 deep design pattern
 
-设计模式 | Spring MVC源码分析 | Java | 分布式  |  编程思想  | JVM | 数据库  
+[设计模式](#深入设计模式) | [Spring MVC源码分析](#看透spring-mvc源代码分析与实践) | [Java](#java) | [分布式](#分布式)  |  [编程思想](#编程思想)  | [JVM](#jvm) | [数据库](#数据库)  
 -----|---------------|------|-----|------|----|-----
 
 - ### [深入设计模式](https://github.com/buildupchao/pattern/tree/master/pattern-design/src/main/java/com/pattern/designpattern)
 
 - ### [JVM](https://github.com/buildupchao/pattern/tree/master/pattern-tutor/pattern-tutor-jvm)
+
+- ### 数据库
 
 - ### 看透Spring MVC源代码分析与实践
 	- chapter 4 [Java中Socket的用法](https://github.com/buildupchao/pattern/tree/master/pattern-tutor/pattern-tutor-springmvc/src/main/java/com/pattern/tutor/deepinspringmvc/socket)
