@@ -52,14 +52,15 @@ public class SecretDataCleanHelper {
 	private static List<Wrapper> handleData(List<Wrapper> wrappers) {
 		List<Wrapper> resultWrappers = Lists.newArrayList();
 		wrappers.stream()
-			.collect(Collectors.groupingBy(Wrapper::getSource, Collectors.groupingBy(Wrapper::getFormName)))
-			.forEach((source, formWrapperMap) -> {
-				formWrapperMap.forEach((formName, formWrappers) -> {
-					String formGroup = formWrappers.stream().map(Wrapper::getFormGroup).distinct().collect(Collectors.joining(","));
-					formWrappers.stream()
-						.collect(Collectors.groupingBy(Wrapper::getConfigName))
-						.forEach((configName, configWrappers) -> {
-							String configGroup = configWrappers.stream().map(Wrapper::getConfigGroup).distinct().collect(Collectors.joining(","));
+			.collect(Collectors.groupingBy(Wrapper::getSource, Collectors.groupingBy(Wrapper::getConfigName)))
+			.forEach((source, configWrapperMap) -> {
+				configWrapperMap.forEach((configName, configWrappers) -> {
+					String configGroup = configWrappers.stream().map(Wrapper::getConfigGroup).distinct().collect(Collectors.joining(","));
+					
+					configWrappers.stream()
+						.collect(Collectors.groupingBy(Wrapper::getFormName))
+						.forEach((formName, formWrappers) -> {
+							String formGroup = formWrappers.stream().map(Wrapper::getFormGroup).distinct().collect(Collectors.joining(","));
 								resultWrappers.add(
 									Wrapper.builder()
 										.source(source)
@@ -93,17 +94,17 @@ public class SecretDataCleanHelper {
 			String[] infos = info.split(",");
 			return Wrapper.builder()
 					.source(infos[0])
-					.formName(infos[1])
-					.formStatus(infos[2])
-					.formGroup(infos[3])
-					.configName(infos[4])
-					.configGroup(infos[5])
+					.configName(infos[1])
+					.configGroup(infos[2])
+					.formName(infos[3])
+					.formStatus(infos[4])
+					.formGroup(infos[5])
 					.build();
 		}
 		
 		@Override
 		public String toString() {
-			return String.format("%s\t%s\t%s\t%s\t%s\t%s\n", source, formName, formStatus, formGroup, configName, configGroup);
+			return String.format("%s\t%s\t%s\t%s\t%s\t%s\n", source, configName, configGroup, formName, formStatus, formGroup);
 		}
 		
 		

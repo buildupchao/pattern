@@ -26,7 +26,7 @@ List list = Arrays.asList(str);
 ```
 <br/><br/>
 [推荐] 高度注意 Map类集合 K/V能不能存储null值的情况，情况如下表：
-![](https://github.com/Zychaowill/ImgStore/blob/master/Java/images/2018-04-13_145555.bmp)
+![](https://github.com/buildupchao/ImgStore/blob/master/Java/images/2018-04-13_145555.bmp)
 <br/><br/>
 [参考] 合理利用好集合的有序性（sort）和稳定性（order），避免集合的无序性（unsort)和不稳定性（unorder）带来的负面影响。<br/>
 [说明] 有序性是指遍历的结果是按某种比较规则依次排列的。稳定性指集合每次遍历的元素次序是一定的。如：ArrayList是 order/unsort；HashMap是unorder/unsort；TreeSet是order/sort。

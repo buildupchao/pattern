@@ -13,13 +13,17 @@ public class LSP {
 		list2.add(new Integer(1));
 		list2.add(new Float(2f));*/
 		
+		realizeInRegex();
 	}
 	
-	public void realizeInRegex() {
+	public static void realizeInRegex() {
 		List<? extends Number> list = new ArrayList<Integer>(); // 协变——>上限
+		// <? extends T>不能使用add方法
+//		list.add(new Integer(1));
 		
 		List<? super Number> list2 = new ArrayList<Object>(); // 逆变——>下限
 		list2.add(new Integer(1));
 		list2.add(new Float(2f));
+		System.out.println(list2.get(0));
 	}
 }
