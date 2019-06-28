@@ -16,6 +16,15 @@ deep design pattern
 	- chapter 6 [详解Servlet](https://blog.csdn.net/qq_17776287/article/details/78118769)
 	- [Bean 装载流程](https://github.com/buildupchao/pattern/tree/master/pattern-tutor/pattern-tutor-springmvc/src/main/java/com/pattern/tutor/deepinspringmvc/simple)
 	- [v5](https://github.com/buildupchao/pattern/tree/master/pattern-tutor/pattern-tutor-springmvc/src/main/java/com/pattern/tutor/deepinspringmvc/v5)
+		- AOP
+		- Bean加载流程
+		- Cache
+		- ApplicationListener, 事件监听机制
+		- FactoryBean
+		- IOC & DI
+		- Proxy, JDK动态代理 & Cglib动态代理
+		- Webflux, 响应式编程
+		
 
 - ### [Java 8 in Action](https://github.com/buildupchao/pattern/tree/master/pattern-tutor/pattern-tutor-syntax/src/main/java/com/pattern/tutor/syntax/action/newfeature/java8)
 
