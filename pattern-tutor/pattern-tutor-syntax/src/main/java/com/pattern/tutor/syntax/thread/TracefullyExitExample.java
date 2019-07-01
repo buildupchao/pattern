@@ -5,7 +5,7 @@ import java.util.concurrent.TimeUnit;
 
 /**
  * @author buildupchao
- *         Date: 2019/01/18 14:51
+ * @date 2019/01/18 14:51
  * @since JDK 1.8
  */
 public class TracefullyExitExample {

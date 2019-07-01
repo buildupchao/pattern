@@ -12,10 +12,10 @@ import com.pattern.tutor.syntax.aop.examples.meta.Timer;
 
 import lombok.extern.slf4j.Slf4j;
 
-@Slf4j
+@Slf4j 
 public class TimerUtil {
 
-	public HashMap<String, Long> getTime() {
+	private static HashMap<String, Long> getTime() {
 		HashMap<String, Long> methodsTable = new HashMap<>();
 		try {
 			String className = Thread.currentThread().getStackTrace()[2].getClassName();
@@ -45,12 +45,12 @@ public class TimerUtil {
 		return methodsTable;
 	}
 
-	public HashMap<String, Long> getMethodsTable() {
+	private static HashMap<String, Long> getMethodsTable() {
 		HashMap<String, Long> methodsTable = getTime();
 		return methodsTable;
 	}
 
-	public void printChart() {
+	public static void printChart() {
 		Map<String, Long> result = sortByValue(getMethodsTable());
 		double max = result.values().iterator().next();
 		for (Map.Entry<String, Long> e : result.entrySet()) {
@@ -62,7 +62,7 @@ public class TimerUtil {
 		}
 	}
 
-	<K, V extends Comparable<? super V>> Map<K, V> sortByValue(HashMap<K, V> map) {
+	private static <K, V extends Comparable<? super V>> Map<K, V> sortByValue(HashMap<K, V> map) {
 		return Lists.newLinkedList(map.entrySet()).stream().sorted((o1, o2) -> o2.getValue().compareTo(o2.getValue()))
 				.collect(HashMap::new, (m, v) -> m.put(v.getKey(), v.getValue()), HashMap::putAll);
 	}

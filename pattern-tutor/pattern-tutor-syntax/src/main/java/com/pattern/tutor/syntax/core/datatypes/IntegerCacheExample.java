@@ -8,7 +8,7 @@ import java.util.Objects;
  * as this method is likely to yield significantly better space 
  * and time performance by caching frequently requested values.
  * 
- * Created by jangz on 2017/11/22
+ * Created by buildupchao on 2017/11/22
  */
 public class IntegerCacheExample {
 	

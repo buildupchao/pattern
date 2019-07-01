@@ -27,14 +27,10 @@ public class HashMapSortByKey {
 		}
 		System.out.println();
 		System.out.println("Before sort:");
-		map.forEach((key, value) -> {
-			System.out.println(key + " : " + value);
-		});
+		System.out.println(map);
 
 		System.out.println("After sort:");
-		sortByValue(map).forEach((key, value) -> {
-			System.out.println(key + " : " + value);
-		});
+		System.out.println(sortByValue(map));
 	}
 
 	public static Map<String, String> sortByValue(Map<String, String> map) {

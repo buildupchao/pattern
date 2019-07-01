@@ -6,7 +6,7 @@ import java.util.Vector;
 
 import com.pattern.tutor.syntax.aop.examples.meta.Timer;
 
-public class Foo {
+public class FooRun {
 
 	@Timer
 	void algo1() {
@@ -33,7 +33,6 @@ public class Foo {
 	}
 	
 	public static void main(String[] args) {
-		TimerUtil utils = new TimerUtil();
-		utils.printChart();
+		TimerUtil.printChart();
 	}
 }
