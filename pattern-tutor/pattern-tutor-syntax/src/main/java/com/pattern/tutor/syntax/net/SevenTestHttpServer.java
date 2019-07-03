@@ -1,4 +1,4 @@
-package com.pattern.tutor.syntax.util;
+package com.pattern.tutor.syntax.net;
 
 import java.io.IOException;
 import java.io.InputStream;
@@ -9,6 +9,7 @@ import com.sun.net.httpserver.HttpExchange;
 import com.sun.net.httpserver.HttpHandler;
 import com.sun.net.httpserver.HttpServer;
 
+@SuppressWarnings("restriction")
 public class SevenTestHttpServer {
 	
 	public static void main(String[] args) {
