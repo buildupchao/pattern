@@ -1,0 +1,64 @@
+package com.pattern.tutor.syntax.collection.risk;
+
+import java.util.ArrayList;
+import java.util.List;
+import java.util.concurrent.TimeUnit;
+
+import org.openjdk.jmh.annotations.Benchmark;
+import org.openjdk.jmh.annotations.BenchmarkMode;
+import org.openjdk.jmh.annotations.Measurement;
+import org.openjdk.jmh.annotations.Mode;
+import org.openjdk.jmh.annotations.OutputTimeUnit;
+import org.openjdk.jmh.annotations.Warmup;
+import org.openjdk.jmh.runner.Runner;
+import org.openjdk.jmh.runner.RunnerException;
+import org.openjdk.jmh.runner.options.Options;
+import org.openjdk.jmh.runner.options.OptionsBuilder;
+
+/**
+ * @author buildupchao
+ * @date 2019/07/04 17:23
+ * @since JDK 1.8
+ */
+@Warmup(iterations = 10, time = 1, timeUnit = TimeUnit.SECONDS)
+@Measurement(iterations = 10, time = 1, timeUnit = TimeUnit.SECONDS)
+public class CollectionsTest {
+
+    private static final int TEN_MILLION = 100000000;
+
+    @Benchmark
+    @BenchmarkMode(Mode.AverageTime)
+    @OutputTimeUnit(TimeUnit.MICROSECONDS)
+    public void arrayList() {
+
+        List<String> array = new ArrayList<>();
+
+        for (int i = 0; i < TEN_MILLION; i++) {
+            array.add("123");
+        }
+
+    }
+
+    @Benchmark
+    @BenchmarkMode(Mode.AverageTime)
+    @OutputTimeUnit(TimeUnit.MICROSECONDS)
+    public void arrayListSize() {
+        List<String> array = new ArrayList<>(TEN_MILLION);
+
+        for (int i = 0; i < TEN_MILLION; i++) {
+            array.add("123");
+        }
+
+    }
+
+
+    public static void main(String[] args) throws RunnerException {
+        Options opt = new OptionsBuilder()
+                .include(CollectionsTest.class.getSimpleName())
+                .forks(1)
+                .build();
+
+
+        new Runner(opt).run();
+    }
+}

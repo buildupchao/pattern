@@ -1,0 +1,67 @@
+# JMH version: 1.19
+# VM version: JDK 1.8.0_172, VM 25.172-b11
+# VM invoker: D:\Software\Java\jdk1.8.0_172\jre\bin\java.exe
+# VM options: -Dfile.encoding=UTF-8
+# Warmup: 5 iterations, 1 s each
+# Measurement: 5 iterations, 1 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: com.pattern.tutor.syntax.collection.risk.CollectionsTest.arrayList
+
+# Run progress: 0.00% complete, ETA 00:00:20
+# Fork: 1 of 1
+# Warmup Iteration   1: 102327.237 us/op
+# Warmup Iteration   2: 84646.437 us/op
+# Warmup Iteration   3: 77540.058 us/op
+# Warmup Iteration   4: 72757.231 us/op
+# Warmup Iteration   5: 59355.223 us/op
+Iteration   1: 64410.096 us/op
+Iteration   2: 56682.508 us/op
+Iteration   3: 68805.251 us/op
+Iteration   4: 57594.926 us/op
+Iteration   5: 49096.735 us/op
+
+
+Result "com.pattern.tutor.syntax.collection.risk.CollectionsTest.arrayList":
+  59317.903 ±(99.9%) 29219.666 us/op [Average]
+  (min, avg, max) = (49096.735, 59317.903, 68805.251), stdev = 7588.255
+  CI (99.9%): [30098.237, 88537.570] (assumes normal distribution)
+
+
+# JMH version: 1.19
+# VM version: JDK 1.8.0_172, VM 25.172-b11
+# VM invoker: D:\Software\Java\jdk1.8.0_172\jre\bin\java.exe
+# VM options: -Dfile.encoding=UTF-8
+# Warmup: 5 iterations, 1 s each
+# Measurement: 5 iterations, 1 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: com.pattern.tutor.syntax.collection.risk.CollectionsTest.arrayListSize
+
+# Run progress: 50.00% complete, ETA 00:00:11
+# Fork: 1 of 1
+# Warmup Iteration   1: 27263.577 us/op
+# Warmup Iteration   2: 51088.227 us/op
+# Warmup Iteration   3: 459991.856 us/op
+# Warmup Iteration   4: 168954.404 us/op
+# Warmup Iteration   5: 202781.352 us/op
+Iteration   1: 145916.950 us/op
+Iteration   2: 114174.281 us/op
+Iteration   3: 27613.705 us/op
+Iteration   4: 31521.911 us/op
+Iteration   5: 26025.959 us/op
+
+
+Result "com.pattern.tutor.syntax.collection.risk.CollectionsTest.arrayListSize":
+  69050.561 ±(99.9%) 218853.482 us/op [Average]
+  (min, avg, max) = (26025.959, 69050.561, 145916.950), stdev = 56835.554
+  CI (99.9%): [≈ 0, 287904.043] (assumes normal distribution)
+
+
+# Run complete. Total time: 00:00:23
+
+Benchmark                      Mode  Cnt      Score        Error  Units
+CollectionsTest.arrayList      avgt    5  59317.903 ±  29219.666  us/op
+CollectionsTest.arrayListSize  avgt    5  69050.561 ± 218853.482  us/op
