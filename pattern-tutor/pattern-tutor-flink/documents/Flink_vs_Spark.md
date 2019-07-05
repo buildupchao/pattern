@@ -31,9 +31,9 @@ Spark与Flink对开发语言的支持如下所示：
 
 支持语言 | Spark | Flink
 --------|----|------
-Java | [x] | [x]
-Scala | [x] | [x]
-Python | [x] | [x]
-R | [x] | 第三方
-SQL | [x] | [x]
+Java | * [x] | * [x]
+Scala | * [x] | * [x]
+Python | * [x] | * [x]
+R | * [x] | 第三方
+SQL | * [x] | * [x]
 
