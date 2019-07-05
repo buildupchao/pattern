@@ -80,3 +80,7 @@ Spark社区在规模和活跃程度上都是领先的，毕竟多了几年发展
 -  在易用性方面两者也都还有一些地方有较大的的改进空间。接下来谁能尽快补上短板发挥强项就有更多机会。
 
 - 总而言之，Flink和Spark没有谁强谁弱，只有哪个更适合当前的场景。
+
+### Other Resources
+
+- [flink和spark stream等框架的对比](https://www.cnblogs.com/charlesblc/p/9600852.html)
