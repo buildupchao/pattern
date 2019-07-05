@@ -41,11 +41,11 @@ SQL | Y | Y
 
 Spark支持的Connectors如下所示：
 
-![]()
+![https://github.com/buildupchao/ImgStore/blob/master/patterns/flink-introduction-1.bmp](https://github.com/buildupchao/ImgStore/blob/master/patterns/flink-introduction-1.bmp?raw=true)
 
 Flink支持的Connectors如下所示：
 
-![]()
+![https://github.com/buildupchao/ImgStore/blob/master/patterns/flink-introduction-2.bmp](https://github.com/buildupchao/ImgStore/blob/master/patterns/flink-introduction-2.bmp?raw=true)
 
 从Flink和Spark Connectors对比可以看出，Spark与Flink支持的Connectors的数据差不多，目前来说可能Spark支持更多一些，Flink后续的支持也会逐步的完善。
 
