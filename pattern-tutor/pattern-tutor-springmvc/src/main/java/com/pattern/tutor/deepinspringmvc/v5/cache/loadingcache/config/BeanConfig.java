@@ -1,4 +1,4 @@
-package com.pattern.tutor.deepinspringmvc.v5.cache.config;
+package com.pattern.tutor.deepinspringmvc.v5.cache.loadingcache.config;
 
 import com.google.common.cache.CacheBuilder;
 import com.google.common.cache.CacheLoader;

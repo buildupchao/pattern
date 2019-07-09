@@ -1,4 +1,4 @@
-package com.pattern.tutor.deepinspringmvc.v5.cache;
+package com.pattern.tutor.deepinspringmvc.v5.cache.loadingcache;
 
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 import org.springframework.context.annotation.ComponentScan;
