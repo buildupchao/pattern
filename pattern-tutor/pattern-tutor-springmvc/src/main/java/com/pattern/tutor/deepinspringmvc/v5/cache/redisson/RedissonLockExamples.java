@@ -25,7 +25,7 @@ public class RedissonLockExamples {
 
     private static RedissonClient redissonClient;
 
-    private static RedissonLiveClient redissonLiveClient;
+    private static RedissonLiveClient redissionLiveClient;
 
     public static void main(String[] args) {
 
@@ -34,7 +34,7 @@ public class RedissonLockExamples {
 
         // init bean
         redissonClient = ctx.getBean(RedissonClient.class);
-        redissonLiveClient = ctx.getBean(RedissonLiveClient.class);
+        redissionLiveClient = ctx.getBean(RedissonLiveClient.class);
 
         // do business
         RedissonLockExamples examples = new RedissonLockExamples();
@@ -42,23 +42,28 @@ public class RedissonLockExamples {
         String taskCode = "test0123";
         Set<String> dependenceTaskCodeSet = Sets.newHashSet("subTask001", "subTask002");
 
-        String redisKey = "TASK-" + taskCode;
-        redissonLiveClient.removeLiveObject(TaskInfo.class, redisKey);
 
-        TaskInfo taskInfo = TaskInfo.builder()
-                .redisKey(redisKey)
-                .taskCode(taskCode)
-                .dependenceTaskCodeSet(dependenceTaskCodeSet)
-                .build();
-        redissonLiveClient.cacheLiveObject(taskInfo);
+        for (int i = 0; i < 300; i++) {
+        	String redisKey = "TASK-" + taskCode;
+        	if (redissionLiveClient.isLiveObjectExist(TaskInfo.class, redisKey)) {
+        		redissionLiveClient.removeLiveObject(TaskInfo.class, redisKey);
+        	}
 
-        for (String subTaskCode : dependenceTaskCodeSet) {
-            new Thread(() -> {
-                examples.testRepeatWriteData(taskCode, subTaskCode);
-            }, "consumer-" + subTaskCode).start();
+        	TaskInfo taskInfo = TaskInfo.builder()
+	                .redisKey(redisKey)
+	                .taskCode(taskCode)
+	                .dependenceTaskCodeSet(dependenceTaskCodeSet)
+	                .build();
+	        redissionLiveClient.cacheLiveObject(taskInfo);
+	
+	        for (String subTaskCode : dependenceTaskCodeSet) {
+	            new Thread(() -> {
+	                examples.testRepeatWriteData(taskCode, subTaskCode);
+	            }, "consumer-" + subTaskCode).start();
+	        }
         }
 
-        ctx.close();
+//        ctx.close();
     }
 
     public void testRepeatWriteData(String taskCode, String childTaskCode) {
@@ -70,16 +75,16 @@ public class RedissonLockExamples {
             boolean res = lock.tryLock(2, 8, TimeUnit.SECONDS);
 
             if (res) {
-                if (!redissonLiveClient.isLiveObjectExist(TaskInfo.class, redisKey)) {
+                if (!redissionLiveClient.isLiveObjectExist(TaskInfo.class, redisKey)) {
                     LOGGER.error("task: {} not exist!", taskCode);
                     return;
                 }
 
-                TaskInfo taskInfo = redissonLiveClient.getLiveObject(TaskInfo.class, redisKey);
+                TaskInfo taskInfo = redissionLiveClient.getLiveObject(TaskInfo.class, redisKey);
 
                 if (!TaskInfo.isFullInfo(taskInfo)) {
-                    LOGGER.error("task {} info not full!", taskCode);
-                    redissonLiveClient.removeLiveObject(TaskInfo.class, redisKey);
+                    LOGGER.error("task [taskCode={}, taskInfo={}] info not full!", taskCode, taskInfo);
+                    redissionLiveClient.removeLiveObject(TaskInfo.class, redisKey);
                     return;
                 }
 
@@ -92,9 +97,9 @@ public class RedissonLockExamples {
                             .taskCode(taskCode)
                             .dependenceTaskCodeSet(dependenceTaskCodeSet)
                             .build();
-                    redissonLiveClient.removeLiveObject(TaskInfo.class, redisKey);
-                    redissonLiveClient.cacheLiveObject(newTaskInfo);
-                    redissonLiveClient.setLiveObjectExpireTime(TaskInfo.class, redisKey, 24 * 60 * 60 * 1000);
+                    redissionLiveClient.removeLiveObject(TaskInfo.class, redisKey);
+                    redissionLiveClient.cacheLiveObject(newTaskInfo);
+                    redissionLiveClient.setLiveObjectExpireTime(TaskInfo.class, redisKey, 24 * 60 * 60 * 1000);
                     return;
                 } else {
                     LOGGER.info("save data into db.");
