@@ -15,6 +15,10 @@ public class DBUtil {
 	private static final String password = "root";
 
 	public static Connection getConnction() {
+		return getConnection(url, user, password);
+	}
+	
+	public static Connection getConnection(String url, String user, String password) {
 		Connection conn = null;
 		try {
 			Class.forName("com.mysql.jdbc.Driver");
