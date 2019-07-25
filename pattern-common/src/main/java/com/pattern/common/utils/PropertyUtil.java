@@ -11,7 +11,13 @@ import java.util.Properties;
 public class PropertyUtil {
 
 	public static void main(String[] args) throws FileNotFoundException, IOException {
-		String workspace = System.getProperty("user.dir") + "/pattern-common/src/main/resources/test.properties";
+		String os = System.getProperty("os.name").toUpperCase();
+		String workspace = null;
+		if (os.contains("WINDOWS")) {
+			workspace = "src/main/resources/test.properties";
+		} else {
+			workspace = System.getProperty("user.dir") + "/pattern-common/src/main/resources/test.properties";
+		}
 
 		System.out.println(workspace);
 		Properties properties = new Properties();
