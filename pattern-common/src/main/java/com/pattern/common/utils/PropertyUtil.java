@@ -1,9 +1,6 @@
 package com.pattern.common.utils;
 
-import java.io.FileNotFoundException;
-import java.io.IOException;
-import java.io.InputStream;
-import java.io.InputStreamReader;
+import java.io.*;
 import java.util.Properties;
 
 /**
@@ -14,9 +11,11 @@ import java.util.Properties;
 public class PropertyUtil {
 
 	public static void main(String[] args) throws FileNotFoundException, IOException {
-		InputStream in = PropertyUtil.class.getClassLoader().getResourceAsStream("src/main/resources/test.properties");
+		String workspace = System.getProperty("user.dir") + "/pattern-common/src/main/resources/test.properties";
+
+		System.out.println(workspace);
 		Properties properties = new Properties();
-		properties.load(new InputStreamReader(in, "UTF-8"));
+		properties.load(new InputStreamReader(new FileInputStream(workspace), "UTF-8"));
 		System.out.println(properties.get("values"));
 	}
 }
