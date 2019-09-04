@@ -23,7 +23,7 @@ public class DataCleanHelper {
 	private String removeStartLabel;
 
 	private volatile LinkedHashSet<String> data = new LinkedHashSet<>();
-	private static final String OUTPUT = System.getProperty("user.dir") + "/src/main/java/com/pattern/tutor/syntax/database/_DataCleanResult";
+	private static final String OUTPUT = "src/main/resources/database/_DataCleanResult";
 	
 	public void loadData(String pathname) {
 		try (BufferedReader reader = new BufferedReader(new FileReader(new File(pathname)))) {

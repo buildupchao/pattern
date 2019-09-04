@@ -9,9 +9,8 @@ import java.io.InputStreamReader;
 public class DataHandleHelper {
 	
 	public static void main(String[] args) throws IOException {
-		String workspace = System.getProperty("user.dir");
-		String base = "src/main/java/com/pattern/tutor/syntax/database";
-		String fileOutputPath = workspace + "/" + base;
+		String base = "src/main/resources/database";
+		String fileOutputPath = base;
 		String formIdFile = "sqlFormats.data";
 		String userIdFile = "userIds.data";
 		String targetIdRelationshipFile = "finalSqlResult.result";

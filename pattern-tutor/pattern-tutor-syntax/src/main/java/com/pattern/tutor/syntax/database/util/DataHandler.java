@@ -24,9 +24,8 @@ public class DataHandler {
 	};
 
 	public static void main(String[] args) throws IOException {
-		String workspace = System.getProperty("user.dir");
-		String base = "src/main/java/com/pattern/tutor/syntax/database";
-		String fileOutputPath = workspace + "/" + base;
+		String base = "src/main/resources/database";
+		String fileOutputPath = base;
 		String formIdFile = "realFormIds.data";
 		String userIdFile = "realUserIds.data";
 		String targetIdRelationshipFile = "targetIdRelationship.result";

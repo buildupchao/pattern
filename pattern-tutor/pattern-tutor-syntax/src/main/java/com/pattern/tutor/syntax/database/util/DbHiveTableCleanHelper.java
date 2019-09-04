@@ -16,17 +16,16 @@ import org.apache.commons.lang3.StringUtils;
 public class DbHiveTableCleanHelper {
 	
 	public static void main(String[] args) throws IOException, ClassNotFoundException, SQLException {
-		String workspace = System.getProperty("user.dir");
-		String base = "src/main/java/com/pattern/tutor/syntax/database";
-		String fileOutputPath = workspace + "/" + base;
+		String base = "src/main/resources/database";
+		String fileOutputPath = base;
 		String clearHiveTableSqlData = "clearHiveTable.data";
 		BufferedReader sqlReader = new BufferedReader(new InputStreamReader(new FileInputStream(fileOutputPath + "/" + clearHiveTableSqlData)));
 		
-		String url = "jdbc:hive2://xxx:xxx/default";
+		String url = "jdbc:hive2://120.92.18.224:10030/default";
 		Class.forName("org.apache.hive.jdbc.HiveDriver");
 		Properties connectionProps = new Properties();
-        connectionProps.put("user", "");
-        connectionProps.put("password", "");
+        connectionProps.put("user", "dw");
+        connectionProps.put("password", "LSF8iFh3");
 		Connection connection = DriverManager.getConnection(url, connectionProps);
 		Statement statement = connection.createStatement(ResultSet.TYPE_FORWARD_ONLY, ResultSet.CONCUR_READ_ONLY);
 		String sql = null;

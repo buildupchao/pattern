@@ -182,9 +182,8 @@ public class DbDataSyncer {
 				.build()
 		);
 		
-		String workspace = System.getProperty("user.dir");
-		String base = "src/main/java/com/pattern/tutor/syntax/database";
-		String fileOutputPath = workspace + "/" + base;
+		String base = "src/main/resources/database";
+		String fileOutputPath = base;
 		DbDataSyncer dbDataSyncer = new DbDataSyncer(fileOutputPath);
 		dbDataSyncer.startSyncSqlConsumer();
 		
