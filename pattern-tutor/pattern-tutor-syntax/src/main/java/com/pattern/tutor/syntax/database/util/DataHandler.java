@@ -36,7 +36,7 @@ public class DataHandler {
 		String formId = null;
 		String userName = null;
 		String insertDate = "2019-04-28 16:16:16";
-		String insertSql = String.valueOf("insert into data_watch_method(form_id, user_id, type, email, create_time) values(%d, %d, 1, 'kszh_report@wps.cn', '%s');\n");
+		String insertSql = String.valueOf("insert into data_watch_method(form_id, user_id, type, email, create_time) values(%d, %d, 1, 'xxxx@xx.cn', '%s');\n");
 		while ((formId = formIdReader.readLine()) != null && (userName = userIdReader.readLine()) != null) {
 			int realFormId = Integer.parseInt(formId);
 			String realSql = String.format(insertSql, realFormId, userNameMap.get(userName), insertDate);

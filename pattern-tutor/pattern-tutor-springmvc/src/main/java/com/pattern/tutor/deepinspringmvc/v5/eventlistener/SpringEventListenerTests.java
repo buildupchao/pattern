@@ -11,6 +11,6 @@ public class SpringEventListenerTests {
 		@SuppressWarnings("resource")
 		ApplicationContext ctx = new AnnotationConfigApplicationContext(SpringEventListenerTests.class);
 		MailSender sender = ctx.getBean(MailSender.class);
-		sender.sendEmail("zhangyachao@wps.cn");
+		sender.sendEmail("zhangyachao@qq.com");
 	}
 }

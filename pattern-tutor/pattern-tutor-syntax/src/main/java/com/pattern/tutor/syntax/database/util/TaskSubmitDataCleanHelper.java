@@ -12,7 +12,7 @@ import org.junit.Test;
 public class TaskSubmitDataCleanHelper {
 	
 	public static void main(String[] args) throws IOException {
-		String base = "D:/zhangyachao/work/KingSoft/2019/KS任务提交记录数据清洗";
+		String base = "D:/zhangyachao/work/xxxx/2019/任务提交记录数据清洗";
 		String fileOutputPath = base;
 		String sourceFile = "task_submit.log";
 		String targetFile = "data_clean_result.log";

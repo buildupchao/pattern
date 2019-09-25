@@ -1,4 +1,4 @@
-package com.pattern.offer.kingsoft;
+package com.pattern.offer.kf;
 
 import lombok.extern.slf4j.Slf4j;
 
