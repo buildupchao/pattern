@@ -13,8 +13,8 @@ public class SearchFormatterUtilTests {
 	@Test
 	public void testFormat() throws Exception {
 		
-		List<String> values = Arrays.asList("wps_mini_1_2", "wps_mini", "q_wps_mini_2", "q_wps_mini");
-		List<String> targetData = SearchFormatterUtil.format("wps_mini", values, String::valueOf);
+		List<String> values = Arrays.asList("oo_mini_1_2", "oo_mini", "q_oo_mini_2", "q_oo_mini");
+		List<String> targetData = SearchFormatterUtil.format("oo_mini", values, String::valueOf);
 		String result = Joiner.on(",").join(targetData);
 		System.out.printf("result=[%s]", result);
 	}

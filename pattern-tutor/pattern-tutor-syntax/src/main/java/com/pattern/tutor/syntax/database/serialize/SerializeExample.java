@@ -9,7 +9,7 @@ import java.util.Objects;
 public class SerializeExample {
 
     public static void main(String[] args) {
-        Person person = new Person("Jang Zhang", 23, '男');
+        Person person = new Person("Jang Zhang", 23, new Character('男'));
         String fileName = "src/main/java/com/pattern/tutor/syntax/database/serialize/result.txt";
 
         serialize(person, fileName);

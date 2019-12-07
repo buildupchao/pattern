@@ -20,7 +20,7 @@ public class SecretDataCleanHelper {
 	
 	public static void main(String[] args) throws NumberFormatException, IOException {
 		String workspace = System.getProperty("user.dir");
-		String base = "src/main/java/com/pattern/tutor/syntax/database";
+		String base = "src/main/resources/database";
 		String fileOutputPath = workspace + "/" + base;
 		String dataFile = "finalSource.data";
 		String resultFile = "finalSourceResult.result";

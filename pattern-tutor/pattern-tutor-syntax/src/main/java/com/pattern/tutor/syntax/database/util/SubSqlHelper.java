@@ -25,8 +25,8 @@ public class SubSqlHelper {
 	private String separator;
 
 	private volatile LinkedHashSet<String> data = new LinkedHashSet<>();
-	private static final String OUTPUT = System.getProperty("user.dir") + "/src/main/java/com/pattern/tutor/syntax/database/_result";
-	private static final String GROUP_OUTPUT = System.getProperty("user.dir") + "/src/main/java/com/pattern/tutor/syntax/database/_groupby";
+	private static final String OUTPUT = "src/main/resources/database/_result";
+	private static final String GROUP_OUTPUT = "src/main/resources/database/_groupby";
 	
 	public void loadData(String pathname) {
 		try (BufferedReader reader = new BufferedReader(new FileReader(new File(pathname)))) {

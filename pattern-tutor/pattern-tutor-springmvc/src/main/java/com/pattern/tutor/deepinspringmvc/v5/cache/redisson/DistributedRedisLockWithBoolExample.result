@@ -1,0 +1,11 @@
+Redisson 3.7.0
+32 connections initialized for 127.0.0.1/127.0.0.1:6379
+1 connections initialized for 127.0.0.1/127.0.0.1:6379
+thread-1[id=30] gets lock.
+thread-2[id=31] does not get lock.
+thread-2[id=31] ends.
+thread-1[id=30] is going to do homework 1 time(s) after dinner.
+thread-1[id=30] is going to do homework 2 time(s) after dinner.
+thread-1[id=30] is going to do homework 3 time(s) after dinner.
+thread-1[id=30] ends.
+ALL DONE

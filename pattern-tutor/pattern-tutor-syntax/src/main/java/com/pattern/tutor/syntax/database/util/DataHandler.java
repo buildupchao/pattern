@@ -24,9 +24,8 @@ public class DataHandler {
 	};
 
 	public static void main(String[] args) throws IOException {
-		String workspace = System.getProperty("user.dir");
-		String base = "src/main/java/com/pattern/tutor/syntax/database";
-		String fileOutputPath = workspace + "/" + base;
+		String base = "src/main/resources/database";
+		String fileOutputPath = base;
 		String formIdFile = "realFormIds.data";
 		String userIdFile = "realUserIds.data";
 		String targetIdRelationshipFile = "targetIdRelationship.result";
@@ -37,7 +36,7 @@ public class DataHandler {
 		String formId = null;
 		String userName = null;
 		String insertDate = "2019-04-28 16:16:16";
-		String insertSql = String.valueOf("insert into data_watch_method(form_id, user_id, type, email, create_time) values(%d, %d, 1, 'kszh_report@wps.cn', '%s');\n");
+		String insertSql = String.valueOf("insert into data_watch_method(form_id, user_id, type, email, create_time) values(%d, %d, 1, 'xxxx@xx.cn', '%s');\n");
 		while ((formId = formIdReader.readLine()) != null && (userName = userIdReader.readLine()) != null) {
 			int realFormId = Integer.parseInt(formId);
 			String realSql = String.format(insertSql, realFormId, userNameMap.get(userName), insertDate);
