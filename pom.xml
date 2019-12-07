@@ -103,11 +103,10 @@
 		</plugins>
 	</build>
 	<modules>
-		<module>pattern-distribution</module>
 		<module>pattern-common</module>
-		<module>pattern-tutor</module>
-		<module>pattern-coding-thinking</module>
-		<module>pattern-offer</module>
 		<module>pattern-design</module>
+		<module>pattern-distribution</module>
+		<module>pattern-offer</module>
+		<module>pattern-tutor</module>
 	</modules>
 </project>
