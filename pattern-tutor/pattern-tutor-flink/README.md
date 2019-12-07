@@ -1,2 +1,0 @@
-# pattern-tutor-flink
-

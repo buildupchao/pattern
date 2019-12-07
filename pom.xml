@@ -109,6 +109,5 @@
 		<module>pattern-coding-thinking</module>
 		<module>pattern-offer</module>
 		<module>pattern-design</module>
-		<module>pattern-collector-java</module>
 	</modules>
 </project>

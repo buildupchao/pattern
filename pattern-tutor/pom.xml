@@ -26,6 +26,5 @@
 		<module>pattern-tutor-netty</module>
 		<module>pattern-tutor-mysql</module>
 		<module>pattern-tutor-microservice</module>
-		<module>pattern-tutor-flink</module>
 	</modules>
 </project>
