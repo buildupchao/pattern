@@ -63,3 +63,6 @@ pattern刚开始只是一个作为设计模式总结汇总的项目，而后进�
 - ### 分布式
 	- [分布式服务框架](https://github.com/buildupchao/pattern/tree/master/pattern-distribution)
 	- [zns：设计一个分布式RPC框架](https://github.com/buildupchao/zns)
+
+- ### [分布式组件](https://github.com/buildupchao/pattern/tree/master/pattern-distribution-component)
+    - ZooKeeper

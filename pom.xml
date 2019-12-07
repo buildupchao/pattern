@@ -106,7 +106,8 @@
 		<module>pattern-common</module>
 		<module>pattern-design</module>
 		<module>pattern-distribution</module>
+        <module>pattern-distribution-component</module>
 		<module>pattern-offer</module>
 		<module>pattern-tutor</module>
-	</modules>
+    </modules>
 </project>
