@@ -6,3 +6,4 @@
 
 - 分布式组件
     - [ZooKeeper](pattern-distribution/zookeeper-apply.md)
+    - [JTA (Atomikos)](pattern-distribution/distribution-transaction.md)
