@@ -16,7 +16,7 @@ CAP理论、BASE
 最终一致性<br/>
 
 1.最大化重试
-2.
+2.----
 
 
 支付宝的异步通知，每个订单的异步通知实行分频率发送：<br/>
@@ -29,3 +29,5 @@ CAP理论、BASE
 1.实现幂等，通过状态，where status=1<br/>
 2.通过状态来驱动数据的变化<br/>
 3.业务流程会更加清晰
+
+![](https://github.com/buildupchao/ImgStore/blob/master/patterns/distribution_transaction.png?raw=true)
