@@ -5,13 +5,8 @@ import org.apache.curator.framework.CuratorFramework;
 import org.apache.curator.framework.CuratorFrameworkFactory;
 import org.apache.curator.framework.recipes.atomic.AtomicValue;
 import org.apache.curator.framework.recipes.atomic.DistributedAtomicInteger;
-import org.apache.curator.framework.recipes.locks.InterProcessMutex;
 import org.apache.curator.retry.ExponentialBackoffRetry;
 import org.apache.curator.retry.RetryNTimes;
-
-import java.text.SimpleDateFormat;
-import java.util.Date;
-import java.util.concurrent.CountDownLatch;
 
 /**
  * @author buildupchao
@@ -33,7 +28,8 @@ public class ZkCuratorAtomicInteger {
                 .build();
         factory.start();
 
-        DistributedAtomicInteger atomicInteger = new DistributedAtomicInteger(factory, "/super", new RetryNTimes(3, 1000));
+        DistributedAtomicInteger atomicInteger = new DistributedAtomicInteger(factory, "/super", new RetryNTimes(3,
+                1000));
 
         AtomicValue<Integer> value = atomicInteger.add(1);
         System.out.println(value.succeeded());
