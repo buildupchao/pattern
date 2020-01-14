@@ -1,9 +1,9 @@
-- 编程建议
-    
-    - [编写高质量代码的建议](pattern-coding-thinking/pattern-coding-thinking.md)
-    
-- Java基础
+- 大数据相关资料记载
 
-	- [Java关键字](pattern-collector-java/java-keywords.md)
-	
-	- [String案例分析](pattern-collector-java/string-examples.md)
+    - [Flink VS Spark](pattern-bigdata/Flink_vs_Spark.md)
+    
+- 分布式相关资料记载
+
+- 分布式组件
+    - [ZooKeeper](pattern-distribution/zookeeper-apply.md)
+    - [JTA (Atomikos)](pattern-distribution/distribution-transaction.md)

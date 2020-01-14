@@ -21,11 +21,9 @@
 	</dependencies>
 	<modules>
 		<module>pattern-tutor-jvm</module>
+		<module>pattern-tutor-microservice</module>
+		<module>pattern-tutor-netty</module>
 		<module>pattern-tutor-springmvc</module>
 		<module>pattern-tutor-syntax</module>
-		<module>pattern-tutor-netty</module>
-		<module>pattern-tutor-database</module>
-		<module>pattern-tutor-microservice</module>
-		<module>pattern-tutor-flink</module>
 	</modules>
 </project>
