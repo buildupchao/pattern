@@ -17,6 +17,7 @@
 		<module>pattern-distribution-component-zk</module>
 		<module>pattern-distribution-component-jta</module>
         <module>pattern-distribution-component-mq</module>
+        <module>pattern-distribution-component-sentinel</module>
     </modules>
 
 </project>
